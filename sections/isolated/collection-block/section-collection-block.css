@@ -1,0 +1,115 @@
+.collection_block .hide {
+  display: none};
+.collection_block .show {
+   display: block;
+}
+.collection_block .filters .filter.active {
+    background: #212428;
+    color: #fff;
+}
+.collection_block .filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.collection_block .filter {
+    border-radius: 50px;
+    border: 1px solid #212428;
+    padding: 6px 24px;
+    font-size: 16px;
+    line-height: 20px;
+    transition: all .2s ease-in;
+    width: max-content;
+    background-color: #fff;
+    color: #212428;
+}
+.collection_block .filter:hover {
+  cursor: pointer;
+}
+
+.collection_block .qure_tabs {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.collection_block .pd_review-inner {
+    text-align: center;
+    padding: 25px 12px;
+}
+.pd_review-card{
+border-radius: 10px;
+    border: 1px solid #DFE0E0;
+    height: 100%;
+    color: var(--bs-body-color);
+}
+.collection_block .pd_review-inner p{
+    font-size: 16px;
+    line-height: 20px;
+}
+.collection_block .qure_tabs::-webkit-scrollbar {
+    display: none;
+}
+.qure__product-img img{
+    width:100%;
+    height: 100%;
+}
+.qure__product-img .qure__product-hover-img {
+    opacity: 0;
+    transition: .5s;
+}
+.qure__product-item:hover .qure__product-hover-img {
+    opacity: 1;
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+}
+.qure__product-name,.qure__product-name a {
+    color: var(--qure__product-name-color, #212428);
+    font-size: var(--qure__product-name-size, 18px);
+    font-weight: var(--qure__product-name-weight, 600);
+    min-height: 45px;
+}
+.qure__product-item:hover .qure__product-name a {
+    color: var(--color-ice);
+    text-decoration: underline;
+}
+.qure__product-reviews {
+    padding: 0px 0 10px;
+}
+.qure__product-main-img {
+    height: 100%;
+}
+.qure__product-item a{
+    border-radius: 10px;
+}
+@media(min-width:768px){
+    .qure__product-main-img img {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 10px;
+        display: block;
+}
+.collection_block .qure__product-details{
+    padding: 15px 0 15px;
+}
+}
+@media(max-width:767px){
+    .collection_block .qure__product-reviews img {
+    max-width: 80px;
+ }
+ .collection_block a.btn {
+    display: none;
+ }
+ .collection_block .pd_review-inner {
+    padding: 10px 8px;
+}
+.collection_block .pd_review-inner p{
+    font-size: 14px;
+}
+}
+
+@media(max-width:575px){
+    .qure__product-reviews {
+    padding: 5px 0 5px;
+}
+}
