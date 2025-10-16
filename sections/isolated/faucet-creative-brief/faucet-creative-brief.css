@@ -102,7 +102,7 @@
 }
 
 .step_card .step_body {
-    padding: 22px;
+    padding: 20px;
 }
 
 .step_card-main {
@@ -141,6 +141,7 @@
     border: 1px solid #DFE0E0;
     border-radius: 10px;
     padding: 24px;
+    height: 100%;
 }
 
 .ingredient_modal .nav-link {
@@ -232,6 +233,9 @@
 }
 
 @media(max-width: 767px) {
+    .serum_ingredients {
+        padding: 16px;
+    }
     .step_card {
         grid-template-columns: 1fr;
         align-items: start;
