@@ -1,3 +1,6 @@
+const [day, month, year] = dateBF.split('.').map(Number);
+const targetBF = new Date(year, month - 1, day, 0, 0, 0).getTime();
+
 const $ = id => document.getElementById(id);
 const [$hours, $minutes, $seconds] = ['ea-hours', 'ea-minutes', 'ea-seconds'].map($);
 
