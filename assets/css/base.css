@@ -1714,9 +1714,14 @@ body.page\.hairgrowth-helmet-guide .tab-content a{
     padding: 1px 12px;
     border-radius: 5px;
     font-weight: 400;
-    margin-bottom: 15px;
+    margin-bottom: 7px !important;
     font-family: "TT Commons";
     font-size: 18px;
+}
+@media(max-width:767px) {
+    .limited_edition{
+        font-size: 16px;
+    }
 }
 .bg_marquee_section{background: #212428;}
 .bg_marquee_section .qure_shipping-content {color: #fff;}

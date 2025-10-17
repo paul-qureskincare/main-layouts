@@ -565,7 +565,10 @@
 @media(max-width: 767px) {
     .product_shower-title {
         font-size: 32px;
-        ;
+    }
+    .patch__single-shortdes p{
+        font-size: 16px;
+       }
     }
 
     .product_shower-badge {
