@@ -1,7 +1,15 @@
+@use "../../../../../mixins/index" as *;
+
+/* stylelint-disable-next-line selector-class-pattern */
+.page\.early-access-black-friday {
+    padding-top: 0;
+    color: #fff;
+    background: #212428;
+}
+
 .early-access-black-friday {
     padding-top: 0;
     padding-bottom: 0;
-    background: #212428;
 
     img {
         display: block;
@@ -12,28 +20,39 @@
 
     .custom__grid {
         --column-gap: 100px;
+        align-items: center;
         margin-top: 0;
         margin-bottom: 0;
-        align-items: center;
     }
 
     .custom__block {
-        @media (max-width: 767px) {
+        @include md {
             padding-right: 0;
+        }
+
+        @include sm {
+            padding-bottom: 24px;
         }
     }
 
+    .banner-text--media {
+        img {
+            height: calc(100vh - 76px);
+            object-fit: cover;
+        }
+    }
+    
+    // .early-access-black-friday__content
     &__content {
         display: flex;
         flex-direction: column;
-        align-items: center;
         gap: 40px;
-        margin-left: -15px;
+        align-items: center;
         margin-right: -15px;
+        margin-left: -15px;
         text-align: center;
-        color: #ffffff;
 
-        @media (max-width: 991px) {
+        @include md {
             gap: 16px;
         }
 
@@ -42,10 +61,10 @@
             font-size: 46px;
             line-height: 1.15;
 
-            @media (max-width: 991px) {
-                font-size: 32px;
+            @include md {
                 padding-right: 15px;
                 padding-left: 15px;
+                font-size: 32px;
             }
         }
 
@@ -53,7 +72,7 @@
             max-width: 127px;
             height: auto;
 
-            @media (max-width: 991px) {
+            @include md {
                 max-width: 84px;
             }
         }
@@ -61,7 +80,7 @@
         img:not(:first-child) {
             display: none;
             
-            @media (max-width: 767px) {
+            @include sm {
                 display: block;
             }
         }
@@ -83,18 +102,18 @@
             display: flex;
             
             .form-control {
-                border-radius: 50px 0 0 50px;
                 padding-left: 30px;
                 border: none;
+                border-radius: 50px 0 0 50px;
             }
     
             .btn {
-                background: #fff;
-                color: #212428;
-                border-radius: 0 50px 50px 0px;
                 padding-right: 30px;
+                color: #212428;
                 font-size: 20px;
+                background: #fff;
                 border: none;
+                border-radius: 0 50px 50px 0;
             }
         }
     }
@@ -104,24 +123,24 @@
             display: flex;
             gap: 8px;
             margin-bottom: 24px;
-            font-size: 20px;
             font-weight: 600;
+            font-size: 20px;
 
-            @media (max-width: 991px) {
+            @include md {
                 margin-bottom: 10px;
             }
 
             svg {
                 width: 20px;
                 height: auto;
-                stroke: #ffffff;
+                stroke: #fff;
             }
         }
 
         &__timer {
             display: flex;
-            justify-content: center;
             gap: 20px;
+            justify-content: center;
 
             .countdown-segment {
                 display: flex;
@@ -129,20 +148,50 @@
                 line-height: 1;
 
                 &:not(:first-child) {
-                    border-left: 1px solid #ffffff;
                     padding-left: 16px;
+                    border-left: 1px solid #fff;
                 }
 
                 span {
                     color: #FF5429;
-                    font-size: 30px;
                     font-weight: 600;
+                    font-size: 30px;
                 }
 
                 small {
                     font-size: 14px;
                     text-transform: uppercase;
                 }
+            }
+        }
+    }
+
+    // .early-access-black-friday-footer
+    &-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 76px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+
+        p {
+            margin: 0;
+        }
+
+        ul {
+            display: flex;
+            gap: 16px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: underline 1px;
+
+            &:hover {
+                text-decoration: none;
             }
         }
     }
