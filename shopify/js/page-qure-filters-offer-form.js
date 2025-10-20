@@ -35,24 +35,21 @@ function updateStickyButton(variant_title) {
 
 const syncCart = async (input) => {
     const cart = await getCartState();
-    const isSubscribe = document.getElementById('subscribe_and_save')?.classList.contains('show');
 
-    if(isSubscribe) {
-        const is_exist = cart.items.some(item => item.key == input.get('id'));
+    const is_exist = cart.items.some(item => item.key == input.get('id'));
 
-        if(!is_exist) {
-            const formData = new FormData();
-            const variant = document.querySelector('.qure__variant-item input[type="radio"]:checked').id
-    
-            if(variant == 'white') {
-                formData.append('updates[' + faucet.variants.White + ']', 0);
-            }
-            else {
-                formData.append('updates[' + faucet.variants.Black + ']', 0);
-            }
-    
-            await updateCart(formData);
+    if(!is_exist) {
+        const formData = new FormData();
+        const variant = document.querySelector('.qure__variant-item input[type="radio"]:checked').id
+
+        if(variant == 'white') {
+            formData.append('updates[' + faucet.variants.White + ']', 0);
         }
+        else {
+            formData.append('updates[' + faucet.variants.Black + ']', 0);
+        }
+
+        await updateCart(formData);
     }
 }
 
@@ -139,9 +136,15 @@ document.querySelector('.qure__product-action-inner form').addEventListener('sub
     if (isSubscribe) {
         input[0].selling_plan = shower_selling_plan;
         input[1].selling_plan = faucet_selling_plan;
+
+        addToCartJson(input);
     }
+    else {
+        __discount = 'FAUCET100';
 
-    addToCartJson(input);
+        fetch('/discount/' + __discount).then(async () => {
+            addToCartJson(input);
+        });
 
+    }
 });
-
