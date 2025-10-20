@@ -1,13 +1,13 @@
 @use "../../../../../mixins/index" as *;
 
 /* stylelint-disable-next-line selector-class-pattern */
-.page\.early-access-black-friday {
+.page\.black-friday-early-access {
     padding-top: 0;
     color: #fff;
     background: #212428;
 }
 
-.early-access-black-friday {
+.black-friday-early-access {
     padding-top: 0;
     padding-bottom: 0;
 
@@ -42,7 +42,7 @@
         }
     }
     
-    // .early-access-black-friday__content
+    // .black-friday-early-access__content
     &__content {
         display: flex;
         flex-direction: column;
@@ -166,7 +166,7 @@
         }
     }
 
-    // .early-access-black-friday-footer
+    // .black-friday-early-access-footer
     &-footer {
         display: flex;
         flex-direction: column;
