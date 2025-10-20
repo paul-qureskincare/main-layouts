@@ -1,0 +1,195 @@
+.page\.early-access-black-friday{
+  background:#212428;
+  color:#fff;
+  padding-top:0;
+}
+
+.early-access-black-friday{
+  padding-bottom:0;
+  padding-top:0;
+}
+.early-access-black-friday img{
+  display:block;
+  height:auto;
+  max-width:100%;
+  width:100%;
+}
+.early-access-black-friday .custom__grid{
+  --column-gap:100px;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  margin-bottom:0;
+  margin-top:0;
+}
+.early-access-black-friday .banner-text--media img{
+  height:calc(100vh - 76px);
+  -o-object-fit:cover;
+     object-fit:cover;
+}
+.early-access-black-friday__content{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  gap:40px;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  margin-left:-15px;
+  margin-right:-15px;
+  text-align:center;
+}
+.early-access-black-friday__content h2{
+  color:inherit;
+  font-size:46px;
+  line-height:1.15;
+}
+.early-access-black-friday__content img:first-child{
+  height:auto;
+  max-width:127px;
+}
+.early-access-black-friday__content img:not(:first-child){
+  display:none;
+}
+.early-access-black-friday .early-access-form{
+  margin-bottom:16px;
+  padding-left:15px;
+  padding-right:15px;
+  width:100%;
+}
+.early-access-black-friday .early-access-form__label{
+  margin-bottom:10px;
+  text-align:center;
+}
+.early-access-black-friday .early-access-form__content{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  position:relative;
+}
+.early-access-black-friday .early-access-form__content .form-control{
+  border:none;
+  border-radius:50px 0 0 50px;
+  padding-left:30px;
+}
+.early-access-black-friday .early-access-form__content .btn{
+  background:#fff;
+  border:none;
+  border-radius:0 50px 50px 0;
+  color:#212428;
+  font-size:20px;
+  padding-right:30px;
+}
+.early-access-black-friday .early-access-countdown__title{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  font-size:20px;
+  font-weight:600;
+  gap:8px;
+  margin-bottom:24px;
+}
+.early-access-black-friday .early-access-countdown__title svg{
+  height:auto;
+  stroke:#fff;
+  width:20px;
+}
+.early-access-black-friday .early-access-countdown__timer{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  gap:20px;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+}
+.early-access-black-friday .early-access-countdown__timer .countdown-segment{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  line-height:1;
+}
+.early-access-black-friday .early-access-countdown__timer .countdown-segment:not(:first-child){
+  border-left:1px solid #fff;
+  padding-left:16px;
+}
+.early-access-black-friday .early-access-countdown__timer .countdown-segment span{
+  color:#ff5429;
+  font-size:30px;
+  font-weight:600;
+}
+.early-access-black-friday .early-access-countdown__timer .countdown-segment small{
+  font-size:14px;
+  text-transform:uppercase;
+}
+.early-access-black-friday-footer{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+  font-size:16px;
+          justify-content:center;
+  min-height:76px;
+  padding-bottom:10px;
+  padding-top:10px;
+}
+.early-access-black-friday-footer p{
+  margin:0;
+}
+.early-access-black-friday-footer ul{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  gap:16px;
+}
+.early-access-black-friday-footer a{
+  color:inherit;
+  -webkit-text-decoration:underline 1px;
+          text-decoration:underline 1px;
+}
+.early-access-black-friday-footer a:hover{
+  text-decoration:none;
+}
+@media only screen and (max-width:991px){
+  .early-access-black-friday .custom__block{
+    padding-right:0;
+  }
+  .early-access-black-friday__content{
+    gap:16px;
+  }
+  .early-access-black-friday__content h2{
+    font-size:32px;
+    padding-left:15px;
+    padding-right:15px;
+  }
+  .early-access-black-friday__content img:first-child{
+    max-width:84px;
+  }
+  .early-access-black-friday .early-access-countdown__title{
+    margin-bottom:10px;
+  }
+}
+@media screen and (max-width:767px){
+  .early-access-black-friday .custom__block{
+    padding-bottom:24px;
+  }
+  .early-access-black-friday__content img:not(:first-child){
+    display:block;
+  }
+}
