@@ -1,0 +1,146 @@
+@use "../../../../../mixins/index" as *;
+
+.bundle-banner {
+    position: relative;
+
+    &__image {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+
+        @include sm {
+            // position: static;
+        }
+        
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 30% 100%;
+
+            @include sm {
+                object-position: 50% 0%;
+                // position: static;
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        @include sm {
+            padding: 43% 15px 15px;
+        }
+
+        .bf-discont-badge {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            margin-left: -42vw;
+            color: #fff;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 1;
+            background: #ff5429;
+            border-radius: 100px;
+
+            @include md {
+                left: 30px;
+                margin-left: 0;
+            }
+
+            &::after {
+                font-weight: normal;
+                font-size: 20px;
+                text-transform: uppercase;
+                content: attr(data-text-bottom);
+            }
+        }
+
+        .row {
+            align-items: center;
+            justify-content: flex-end;
+            padding-top: 40px;
+            padding-bottom: 34px;
+
+            @include sm {
+                gap: 10px;
+                padding-top: 34px;
+                padding-bottom: 24px;
+                text-align: center;
+            }
+        }
+
+        h3 {
+            margin-bottom: 5px;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgb(255 84 41 / 70%);
+                transform: scale(1);
+            }
+
+            100% {
+                box-shadow: 0 0 0 8px rgb(255 84 41 / 0%);
+                transform: scale(1.1);
+            }
+        }
+
+        .btn {
+            width: 100%;
+            max-width: 350px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+
+            @include md {
+                max-width: none;
+            }
+        }
+
+        .under-button-text {
+            margin-top: 12px;
+            margin-left: 15px;
+            font-size: 16px;
+
+            &::before {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                margin-right: 12px;
+                background: #ff5429;
+                border-radius: 50%;
+                animation: pulse 2s infinite; 
+                content: ' ';
+            }
+        }
+    }
+}
+
+.bundle-banners-slider {
+    .swiper-pagination {
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: right;
+    
+        @include md {
+            text-align: center;
+        }
+    }
+    
+    .swiper-pagination-bullet-active {
+        background: #000;
+    }
+}
