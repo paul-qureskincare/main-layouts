@@ -44,6 +44,8 @@
     &-content {
         img {
             &:first-child {
+                max-width: 214px;
+                
                 @include sm {
                     max-width: 185px;
                 }
