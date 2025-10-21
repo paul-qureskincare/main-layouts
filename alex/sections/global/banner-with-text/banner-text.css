@@ -24,6 +24,9 @@
   padding-bottom:0;
   padding-top:0;
 }
+.banner-with-text-content img:first-child{
+  max-width:214px;
+}
 .banner-with-text-content h2{
   color:inherit;
   font-size:46px;
