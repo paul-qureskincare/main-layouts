@@ -6,6 +6,7 @@
 .banner-with-text{
   padding-bottom:0;
   padding-top:0;
+  position:relative;
 }
 .banner-with-text.color-background{
   background:#212428;
@@ -42,6 +43,11 @@
 }
 .banner-with-text-content.text-center .btn{
   width:100%;
+}
+.banner-with-text-link{
+  inset:0;
+  position:absolute;
+  z-index:1;
 }
 .banner-with-text .banner-text--media{
   margin-top:0;
