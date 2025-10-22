@@ -7,6 +7,7 @@
 }
 
 .banner-with-text {
+    position: relative;
     padding-top: 0;
     padding-bottom: 0;
 
@@ -34,7 +35,7 @@
             padding-bottom: 24px;
         }
 
-        &:not(:first-child) {
+        &:last-child {
             padding-top: 0;
             padding-bottom: 0;
         }
@@ -45,9 +46,17 @@
         img {
             &:first-child {
                 max-width: 214px;
+                margin-bottom: 16px;
                 
                 @include sm {
                     max-width: 185px;
+                }
+
+                // Changes on collections page
+                .collection & {
+                    @include sm {
+                        display: none;
+                    }
                 }
             }
         }
@@ -60,10 +69,6 @@
 
             @include md {
                 font-size: 32px;
-            }
-
-            &:not(:first-child) {
-                margin-top: 16px;
             }
         }
 
@@ -91,12 +96,23 @@
         }
     }
 
+    // .banner-with-text-link
+    &-link {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+    }
+
     .banner-text--media {
         position: relative;
         margin-top: 0;
 
         @include md {
             margin-top: 10px;
+        }
+
+        img {
+            width: 100%;
         }
 
         .bf-discont-badge {
@@ -142,6 +158,16 @@
             &::after {
                 content: attr(data-text-bottom);
             }
+
+            // Changes on collections page
+            .collection & {
+                right: 30px;
+                display: none;
+
+                @include sm {
+                    display: flex;
+                }
+            }
         }
 
         .swiper-thumbnail-press-slider {
@@ -175,6 +201,43 @@
             .swiper-slide-thumb-active {
                 color: #91baec;
                 pointer-events: none;
+            }
+        }
+    }
+
+    &.two-images {
+        .custom__grid {
+            @include sm {
+                margin-right: 0;
+                padding-left: 0;
+            }
+        }
+
+        .custom__block {
+            &:first-child {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            &:last-child {
+                @include sm {
+                    display: none;
+                }
+            }
+
+            .banner-text--media {
+                @include sm {
+                    margin: 0;
+                }
+
+                img {
+                    min-height: 210px;
+                    object-fit: cover;
+
+                    @include sm {
+                        min-height: 0;
+                    }
+                }
             }
         }
     }
