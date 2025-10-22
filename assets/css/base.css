@@ -975,6 +975,12 @@ body {
 .quer-collection-content .qc-img img{width:100%}
 .quer-collection-content{position:relative;}
 .quer-collection-content .qc-title {font-size: 16px;line-height: 20px;color: #212428;letter-spacing: .65px;text-transform: none;width: max-content;margin: 0 auto;background: #fff;padding: 12px 24px;border-radius: 50px;font-weight: 600;display: flex;align-items: center;gap: 0 5px;margin-top: -20px;z-index: 1;position: relative;}
+.quer-collection-content .qc-title-black-friday {
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0;
+    background: linear-gradient(90deg, #ff4e22 0%, #ff8f72 50%, #ff4e22 100%);
+}
 .qc__thumb-title {font-size: 13px;line-height: 14px;text-align: center;margin-top: 6px;display: block;color: var(--tmb_title-clr, #fff);}
 .quer-collection-content .qc-title span{font-family:var(--heading-font-family);font-weight:500;letter-spacing:.65px}
 .header-item{padding-top:5px;padding-bottom:5px;--heading-color:#fff;color:var(--header-color)}
@@ -1047,6 +1053,28 @@ body {
 .mob-ftr-blocks{display:grid;grid-template-columns:repeat(2,1fr);justify-content:center;gap:30px 5px}
 .mob-ftr-blocks .mob-ftr-item{display:grid;grid-template-columns:35px 1fr;gap:8px;align-items:center;font-size:12px;line-height:18px;color:var(--white-color)}
 .mob-ftr-blocks .mob-ftr-item img{width:100%;height:auto}
+
+/* Black friday menu item */
+@keyframes flare {
+    0% {
+        background-position: 300% 0;
+    }
+
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+.navigation a.black-friday-menu-item,
+.navigation-mobile .nav-link.black-friday-menu-item {
+    font-weight: 600;
+    background-clip: text;
+    background: linear-gradient(90deg, #ff4e22 30%, #ff8f72 40%, #ffa48d 50%, #ffc6b8 60%, #ffa48d 70%, #ff8f72 80%, #ff4e22 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 100%;
+    animation: flare 5s linear infinite;
+}
 /*============================ Header Menu End ====================================== */
 .qure__section-header {margin-bottom: 40px;}
 .qure__section-heading {color: var(--heading-color, #212428 );font-size: var(--heading-size, 38px);}
