@@ -2,15 +2,47 @@
 <link rel="stylesheet" href="assets/css/component-drawer.css" />
 <div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas" aria-labelledby="cartCanvasLabel">
    <cart-notification>
-               <div class="cart-countdown-time" data-countdown-time="15" data-timeout-message="Time is up!">
-                  <span class=""><strong>IN HIGH DEMAND</strong> | Items reserved for:</span>
-                  <span class="cart-counter d-flex">
-                     <span class="cart-counter-block countdown-timer-minute">00</span>
-                     <span class="cart-counter-block countdown-timer-sec">00</span> 
-                  </span>
-                  <span class="countdown-message"></span>
-               </div>
-            </cart-notification>
+      <div class="cart-countdown-time d-none" data-countdown-time="15" data-timeout-message="Time is up!">
+         <span class=""><strong>IN HIGH DEMAND</strong> | Items reserved for:</span>
+         <span class="cart-counter d-flex">
+            <span class="cart-counter-block countdown-timer-minute">00</span>
+            <span class="cart-counter-block countdown-timer-sec">00</span> 
+         </span>
+         <span class="countdown-message"></span>
+      </div>
+   </cart-notification>   
+
+
+    <!-- countdown-timer start  -->
+    <link rel="stylesheet" href="sections/isolated/countdown-timer/countdown-timer.css">
+    <div class="color-background"
+        style="--section-background:#F6F6F7;">
+        <div class="container cart_counter_container">
+            <p class="extra_entries extra_entries_cart">Black Friday Ends In:</p>
+            <div class="countdown countdown_cart" data-target="2025-10-30T00:00:00">
+                <div>
+                    <div class="days">00</div><span>DAYS</span>
+                </div>
+                <div><img src="sections/isolated/countdown-timer/images/white_line.svg" alt=""></div>
+                <div>
+                    <div class="hours">00</div><span>HOURS</span>
+                </div>
+                <div><img src="sections/isolated/countdown-timer/images/white_line.svg" alt=""></div>
+                <div>
+                    <div class="minutes">00</div><span>MINUTES</span>
+                </div>
+                <div><img src="sections/isolated/countdown-timer/images/white_line.svg" alt=""></div>
+                <div>
+                    <div class="seconds">00</div><span>SECONDS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- countdown-timer end  -->
+
+   <!-- countdown-timer start  -->
+
    <div id="cart-dynamic-content" class="offcanvas-dynamic-content">
       <div class="offcanvas-header border-btm-black">
          <h5 class="cart-drawer-heading fs-18 fm-body fw-600 m-0">Your Cart (2)</h5>
@@ -38,6 +70,23 @@
             </div>
          </div>
       </div>
+
+      <!-- you unlocked  -->
+      <div class="you_unlocked_wrapper d-flex align-items-center justify-content-between d-none">
+         <p class="you_unlocked_text">You’ve unlocked:</p>
+         <div class="d-flex cart_unclocked">
+            <div class="d-flex cart_free_shipping">
+               <p>Free Shipping</p>
+               <img src="assets/images/black_tick_icon.svg" alt="">
+            </div>
+            <div class="d-flex pillowcase">
+               <p>Free Pillowcase</p>
+               <img src="assets/images/pillowcase_icon.svg" alt="">
+            </div>
+         </div>
+      </div>
+      <!-- you unlocked end -->
+
       <div class="offcanvas-body p-0">
          <div class="cart-content-area d-flex justify-content-between flex-column">
             <div class="minicart-loop custom-scrollbar">
@@ -317,8 +366,12 @@
                   </div>
                   <div class="qure__cart-summary">
 
-                     <div class="qure__cart-box qure__cart-savings">
+                     <div class="qure__cart-box qure__cart-savings d-none">
                         <div class="qure__cart-title">Savings</div>
+                        <div class="qure__cart-price">$287</div>
+                     </div>
+                     <div class="qure__cart-box qure__cart-savings_blk_friday">
+                        <div class="qure__cart-title">BLACK FRIDAY SAVINGS</div>
                         <div class="qure__cart-price">$287</div>
                      </div>
                      <div class="qure__cart-box">
@@ -350,10 +403,13 @@
                      </svg>
                   </button>
                </div>
-               <div class="drawer__footer">
+               <div class="drawer__footer d-none">
                   <div class="drawer__cart__grid">
                      <img src="assets/images/sheild.svg" class="img-fluid" /> Backed by our 30-Day Money-Back Guarantee
                   </div>
+               </div>
+               <div class="d-flex justify-content-center payment_cards mt-10">
+                  <img src="assets/images/payment_cards.svg" alt="">
                </div>
 
             </div>
