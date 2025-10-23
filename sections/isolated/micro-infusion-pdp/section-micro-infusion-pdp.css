@@ -124,6 +124,18 @@
 
 .exclusive_tag .tag_content {padding: 6px 20px 10px;font-size: 22px;font-weight: 600;}
 
+.black-frigay-badge img {
+    display: block;
+    width: 204px;
+    height: auto;
+}
+
+@media (max-width:767px) {
+    .black-frigay-badge img {
+        width: 174px;
+    }
+}
+
 /* css for page.sunil-micro-infusion-pdp.html start */
 .qure__variant-item>input {
     display: none;
