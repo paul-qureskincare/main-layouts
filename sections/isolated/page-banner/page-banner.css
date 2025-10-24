@@ -120,6 +120,9 @@ body.page\.microinfusion-safety-guide .ctm_cls_title_wrapper {
 body.page\.microinfusion-safety-guide-v15 .ctm_cls_title_wrapper {
     max-width: 330px;
 }
+body.page\.q-rejuvalight-pro-led-mask-guide .ctm_cls_title_wrapper {
+    max-width: 450px;
+}
 
 @media(min-width:768px){
     body.page\.microinfusion-safety-guide .ctm_cls_title_wrapper {
@@ -134,6 +137,9 @@ body.page\.microinfusion-safety-guide-v15 .ctm_cls_title_wrapper {
         max-width: 235px;
         padding-bottom: 20px;
     }
+    body.page\.microinfusion-safety-guide .ctm_cls_title_wrapper {
+    max-width: 225px;
+}
 }
 
 /* css for targeting page banner content with the body class for specific pages */
