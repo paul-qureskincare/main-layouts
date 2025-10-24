@@ -127,6 +127,171 @@
             }
         }
     }
+
+    &.bundle-banner-mini {
+        background: #212428;
+        
+        .bundle-banner__content {
+            max-width: 1330px;
+            margin-right: auto;
+            margin-left: auto;
+            color: #fff;  
+
+            @include sm {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+        .mini-bundles {
+            display: grid;
+            grid-template-columns: calc(53.6% - 10px) repeat(2, calc(23.2% - 5px));
+            gap: 10px;
+            width: 100%;
+            max-width: 500px;
+            margin-right: 10%;
+            margin-left: auto;
+
+            @include sm {
+                gap: 6px;
+                max-width: calc(100% - 30px);
+                margin-right: 0;
+            }
+
+            // mini-bundles__item
+            &__item {
+                position: relative;
+
+                &:first-child {
+                    &::before {
+                        position: absolute;
+                        top: 6px;
+                        left: 70px;
+                        width: 70px;
+                        color: #212428;
+                        line-height: 1.1;
+                        content: attr(data-desc);
+
+                        @media screen and (max-width: 1230px) {
+                            left: 90px;
+                        }
+
+                        @include md {
+                            left: 50px;
+                            font-size: 12px;
+                        }
+
+                        @include sm {
+                            left: 35px;
+                        }
+                    }
+                }
+
+                &:not(:first-child) {
+                    &::before {
+                        position: absolute;
+                        top: 6px;
+                        left: 8px;
+                        width: 25px;
+                        height: 25px;
+                        font-size: 20px;
+                        line-height: 25px;
+                        text-align: center;
+                        background: #ff5429;
+                        border-radius: 25px;
+                        content: '%';
+
+                        @include sm {
+                            top: 4px;
+                            left: 4px;
+                        }
+                    }
+                }
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 10px;
+                }
+
+                .bf-discont-badge {
+                    top: 50%;
+                    left: 0;
+                    width: 120px;
+                    height: 120px;
+                    margin-top: -60px;
+                    margin-left: -60px;
+                    font-size: 50px;
+
+                    @media screen and (max-width: 1230px) {
+                        margin-left: -30px;
+                    }
+
+                    @include md {
+                        width: 80px;
+                        height: 80px;
+                        margin-top: -40px;
+                        font-size: 32px;
+
+                    }
+
+                    &::before,
+                    &::after {
+                        font-size: 18px;
+                        text-transform: uppercase;
+
+                        @include md {
+                            font-size: 12px;
+                        }
+                    }
+
+                    &::before {
+                        content: attr(data-text-top);
+                    }
+                    
+                    &::after {
+                        content: attr(data-text-bottom);
+                    }
+                }
+            }
+        }
+
+        .row {
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            @include sm {
+                gap: 20px;
+                padding-top: 20px;
+            }
+        }
+
+        h3 {
+            color: inherit;
+            font-size: 38px;
+
+            @include md {
+                font-size: 28px;
+            }
+        }
+
+        .btn {
+            padding-right: 20px;
+            padding-left: 20px;
+            color: #212428;
+            background: #fff;
+            border-color: #fff;
+            
+            @media screen and (min-width: 991px) {
+                display: block;
+                max-width: 300px;
+                margin-left: auto;
+                padding-top: 17px;
+                padding-bottom: 17px;
+            }
+        }
+    }
 }
 
 .bundle-banners-slider {
