@@ -150,12 +150,4 @@ body.page\.microinfusion-safety-guide-v15 .ctm_cls_title_wrapper {
     margin-left: 10px;
     margin-bottom: 10px;
 }
-.moneyback_guarantee_content p{
-    margin-bottom: 0;
-}
-.ctm_grid {
-    grid-template-columns: 80px 1fr;
-    gap: 10px;
-    place-items: center;
-}
 /* css for page.bf-limited-edition-kit.html end */
