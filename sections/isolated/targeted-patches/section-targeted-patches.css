@@ -37,7 +37,7 @@
     gap: 10px;
     background: #F6F6F7;
     border-radius: 5px;
-    max-width: 415px;
+    max-width: 460px;
     margin: 0 auto;
     font-size: 14px;
     line-height: 18px;
@@ -209,3 +209,79 @@
   font-weight: 800;
   letter-spacing: 1px;
 }
+
+/* select your supply blocks in product.dermal-mist  */
+.best__value .qure__variant-box .qv-img {
+    max-height: 50px;
+    min-width: 70px;
+    max-width: 70px;
+    object-fit: contain;
+}
+.all-in-one-bf .qure__variant-item {
+    margin-bottom: 12px;
+}
+.vp-best-value {
+    background: var(--qure-charcoal);
+    color: var(--white-color);
+    font-size: 14px;
+    border-radius: 7px 7px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+    padding-bottom: 2px;
+    width: calc(100% + 1px);
+}
+.all-in-one-bf .vp-best-value {
+    max-width: 100px;
+    margin: 0 30px 0 auto;
+}
+.qure__variant-item>input:checked+.qure__variant-box {
+    border: 2px solid #212428;
+    background-color: #F6F6F7;
+}
+.all-in-one-bf .qure__variant-box {
+    padding: 12px;
+}
+.qure__variant-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 18px 0;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid #DFE0E0;
+    cursor: pointer;
+    transition: border-color .4s ease;
+}
+.qure__variant-item>input:checked+.qure__variant-box {
+    border: 2px solid #212428;
+    background-color: #F6F6F7;
+}
+.qure__variant-item>input {
+    display: none;
+}
+.qure__variant-box .bf-buy-Wrapper {
+    display: flex;
+    gap: 5px;
+}
+.all-in-one-bf .dis_red_line {
+    position: relative;
+}
+.all-in-one-bf .dis_red_line:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #FF5429;
+    transform: rotate(5deg);
+    top: 10px;
+}
+body.product\.dermal-mist .qure-product-details {
+    max-width: 500px;
+}
+body.product\.dermal-mist .patch__product-variants {
+    margin-top: 30px;
+}
+/* select your supply blocks in product.dermal-mist  */
