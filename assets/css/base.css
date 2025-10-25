@@ -1374,6 +1374,9 @@ body {
     .mw {
         max-width: var(--mw-mob, 100%) !important;
     }
+    .max-w-ctm {
+        max-width: var(--max-w-ctm, 100%) !important;
+    }
     .btn-center-mob {
         display: flex;
         justify-content: center;
@@ -1564,6 +1567,10 @@ body {
 /* max-width */
 .mw{
     max-width:var(--mw, 100%);
+    height: auto;
+}
+.max-w-ctm{
+    max-width:var(--max-w-ctm, 100%);
     height: auto;
 }
 .text-progress-circle circle.K4v4P{
