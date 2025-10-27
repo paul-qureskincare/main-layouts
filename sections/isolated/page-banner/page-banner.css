@@ -132,6 +132,7 @@ body.page\.q-rejuvalight-pro-led-mask-guide .ctm_cls_title_wrapper {
 @media(max-width:767px){
     body.page\.microinfusion-safety-guide .ctm_cls_title_wrapper {
         padding-bottom: 50px;
+        max-width: 230px;
     }
     body.page\.microinfusion-safety-guide-v15 .ctm_cls_title_wrapper {
         max-width: 235px;

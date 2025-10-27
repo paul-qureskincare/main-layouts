@@ -217,6 +217,33 @@
     max-width: 100%;
     z-index: 9;
 }
+.modal-dialog{
+    --bs-modal-width:940px;
+}
+.step_card a{
+    color: #91BAEC;    
+}
+.bg-success-subtle{
+    background: #EEF7F4 !important;
+}
+.bg-primary-subtle{
+    background: #F4F8FD !important;
+}
+.mw-500{max-width: 500px;}
+.text-secondary-emphasis{
+    --bs-secondary-text-emphasis:#FF5429;
+}
+.qure__section-heading{font-size: 28px;}
+.filter-card-item.filter-card-video{
+    color: #212428;
+}
+.bg-primary-subtle {
+    background: #FFEEEA!important;
+}
+body.page\.microinfusion-safety-guide .bg-primary-subtle {
+    background: #F4F8FD!important;
+}
+
 
 @media(max-width:991px) {
     .tab-pane {
