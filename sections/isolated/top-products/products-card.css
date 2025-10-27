@@ -22,6 +22,34 @@
 .qure__product-img {
     max-height: 300px;
 } 
+.qure__product-price {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+.qure__product-price .bef_price {
+    color: #8b8c8e;
+}
+.qure__product-price .dis_red_line {
+    position: relative;
+    display: flex;
+    gap: 6px;
+}
+.qure__product-price .dis_red_line:after {
+    position: absolute;
+    top: 10px;
+    right: -3px;
+    left: -3px;
+    z-index: 1;
+    height: 2px;
+    background: #ff4e22;
+    content: '';
+    transform: rotate(7deg);
+}
+.qure__product-price .black_friday_price {
+    margin-left: 8px;
+    font-weight: 600;
+}
 body.page\.car-giveaway .qure__product-details{
     text-align: center;
 }

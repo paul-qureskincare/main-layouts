@@ -119,6 +119,91 @@
   margin-right:12px;
   width:8px;
 }
+.bundle-banner.bundle-banner-mini{
+  background:#212428;
+}
+.bundle-banner.bundle-banner-mini .bundle-banner__content{
+  color:#fff;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:1330px;
+}
+.bundle-banner.bundle-banner-mini .mini-bundles{
+  display:-ms-grid;
+  display:grid;
+  -ms-grid-columns:calc(53.6% - 10px) 10px calc(23.2% - 5px) 10px calc(23.2% - 5px);
+  gap:10px;
+  grid-template-columns:calc(53.6% - 10px) repeat(2, calc(23.2% - 5px));
+  margin-left:auto;
+  margin-right:10%;
+  max-width:500px;
+  width:100%;
+}
+.bundle-banner.bundle-banner-mini .mini-bundles__item{
+  position:relative;
+}
+.bundle-banner.bundle-banner-mini .mini-bundles__item:first-child:before{
+  color:#212428;
+  content:attr(data-desc);
+  left:70px;
+  line-height:1.1;
+  position:absolute;
+  top:6px;
+  width:70px;
+}
+.bundle-banner.bundle-banner-mini .mini-bundles__item:not(:first-child):before{
+  background:#ff5429;
+  border-radius:25px;
+  content:"%";
+  font-size:20px;
+  height:25px;
+  left:8px;
+  line-height:25px;
+  position:absolute;
+  text-align:center;
+  top:6px;
+  width:25px;
+}
+.bundle-banner.bundle-banner-mini .mini-bundles__item img{
+  border-radius:10px;
+  display:block;
+  height:auto;
+  width:100%;
+}
+.bundle-banner.bundle-banner-mini .mini-bundles__item .bf-discont-badge{
+  font-size:50px;
+  height:120px;
+  left:0;
+  margin-left:-60px;
+  margin-top:-60px;
+  top:50%;
+  width:120px;
+}
+.bundle-banner.bundle-banner-mini .mini-bundles__item .bf-discont-badge:after,.bundle-banner.bundle-banner-mini .mini-bundles__item .bf-discont-badge:before{
+  font-size:18px;
+  text-transform:uppercase;
+}
+.bundle-banner.bundle-banner-mini .mini-bundles__item .bf-discont-badge:before{
+  content:attr(data-text-top);
+}
+.bundle-banner.bundle-banner-mini .mini-bundles__item .bf-discont-badge:after{
+  content:attr(data-text-bottom);
+}
+.bundle-banner.bundle-banner-mini .row{
+  padding-bottom:20px;
+  padding-top:20px;
+}
+.bundle-banner.bundle-banner-mini h3{
+  color:inherit;
+  font-size:38px;
+}
+.bundle-banner.bundle-banner-mini .btn{
+  background:#fff;
+  border-color:#fff;
+  color:#212428;
+  padding-left:20px;
+  padding-right:20px;
+}
 
 .bundle-banners-slider .swiper-pagination{
   padding-left:20px;
@@ -128,13 +213,46 @@
 .bundle-banners-slider .swiper-pagination-bullet-active{
   background:#000;
 }
-@media only screen and (max-width:991px){
+@media screen and (min-width:991px){
+  .bundle-banner.bundle-banner-mini .btn{
+    display:block;
+    margin-left:auto;
+    max-width:300px;
+    padding-bottom:17px;
+    padding-top:17px;
+  }
+}
+@media screen and (max-width:1230px){
+  .bundle-banner.bundle-banner-mini .mini-bundles__item:first-child:before{
+    left:90px;
+  }
+  .bundle-banner.bundle-banner-mini .mini-bundles__item .bf-discont-badge{
+    margin-left:-30px;
+  }
+}
+@media screen and (max-width:991px){
   .bundle-banner__content .bf-discont-badge{
     left:30px;
     margin-left:0;
   }
   .bundle-banner__content .btn{
     max-width:none;
+  }
+  .bundle-banner.bundle-banner-mini .mini-bundles__item:first-child:before{
+    font-size:12px;
+    left:50px;
+  }
+  .bundle-banner.bundle-banner-mini .mini-bundles__item .bf-discont-badge{
+    font-size:32px;
+    height:80px;
+    margin-top:-40px;
+    width:80px;
+  }
+  .bundle-banner.bundle-banner-mini .mini-bundles__item .bf-discont-badge:after,.bundle-banner.bundle-banner-mini .mini-bundles__item .bf-discont-badge:before{
+    font-size:12px;
+  }
+  .bundle-banner.bundle-banner-mini h3{
+    font-size:28px;
   }
   .bundle-banners-slider .swiper-pagination{
     text-align:center;
@@ -153,5 +271,25 @@
     padding-bottom:24px;
     padding-top:34px;
     text-align:center;
+  }
+  .bundle-banner.bundle-banner-mini .bundle-banner__content{
+    padding-bottom:10px;
+    padding-top:10px;
+  }
+  .bundle-banner.bundle-banner-mini .mini-bundles{
+    gap:6px;
+    margin-right:0;
+    max-width:calc(100% - 30px);
+  }
+  .bundle-banner.bundle-banner-mini .mini-bundles__item:first-child:before{
+    left:35px;
+  }
+  .bundle-banner.bundle-banner-mini .mini-bundles__item:not(:first-child):before{
+    left:4px;
+    top:4px;
+  }
+  .bundle-banner.bundle-banner-mini .row{
+    gap:20px;
+    padding-top:20px;
   }
 }
