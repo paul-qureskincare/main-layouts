@@ -38,9 +38,8 @@
 
     <!-- section-targeted-patches -->
     <link rel="stylesheet" href="sections/isolated/targeted-patches/section-targeted-patches.css" />
-    <div id="buy_box-patches" class="qure__trageted-patches qure__section"
-        style="--section-padding-top: 80px; --section-padding-bottom: 80px;">
-        <div class="container" style="--column-gap:80px; --column-gap-mobile:30px;">
+    <div id="buy_box-patches" class="qure__trageted-patches qure__section">
+        <div class="container custom_gap">
             <div class="row custom__grid">
                 <div class="col-lg-6 custom__block">
                     <div class="qure-product-details">
@@ -129,10 +128,14 @@
                             <img src="sections/isolated/clean-water/images/cyan_blue_rating.svg" alt="">
                             <span><strong>4.7</strong>/5 Rated by Customers</span>
                         </div>
-                        <p class="mb-10 fs-16 fw-400">HYPOCHLOROUS ACID SPRAY DERMAL MIST</p>
-                        <h1 class="qure__product-title mb-10">Purify your skin anytime, anywhere with Dermal Mist</h1>
-                        <h4 class="fw-500 fm-body" style="--font-h4: 22px; --font-h4-mob: 20px;">{$dyn}</h4>
-                        <div class="patch__single-shortdes mt-20">
+                        <p class="hypo_acid_derm_mist">HYPOCHLOROUS ACID SPRAY DERMAL MIST</p>
+                        <h1 class="qure__product-title purify_skin">Purify your skin anytime, anywhere with Dermal Mist</h1>
+                        <h4 class="price_dyn d-none">{$dyn}</h4>
+                        <div class="black_friday_wrapper">
+                            <p class="black_friday_pricing">BLACK FRIDAY</p>
+                            <a href="" class="save_perc">SAVE 26%</a>
+                        </div>
+                        <div class="patch__single-shortdes">
                             <ul>
                                 <li>A hypochlorous acid mist that purifies skin, kills breakout-causing bacteria, and
                                     supports barrier repair.</li>
@@ -141,12 +144,80 @@
                                 <li>Comes as a duo: 100ml for daily use and a travel-friendly 15ml.</li>
                             </ul>
                         </div>
+                        
+                        <div class="patch__product-variants">
+                            <div class="patch__variant-label">Select Your supply:</div>
+                            <div class="best__value all-in-one-bf">
+                                <div class="col qure__variant-item">
+                                    <div class="vp-best-value">Best Value <i class="fa-sharp fa-solid fa-star-sharp"></i>
+                                    </div>
+                                <input type="radio" class="variant__input" name="supply-pack-bf" id="three-month-bf" checked="">
+                                <label for="three-month-bf" class="qure__variant-box">
+                                    <div class="bf-buy-Wrapper">
+                                    <div class="qv-frame">
+                                        <div class="qv-frame-inner">
+                                            <img src="sections/isolated/micro-infusion-pdp/images/derm_trio.webp" class="qv-img">
+                                        </div>
+                                    </div>
+                                    <div class="div">6 Months Supply<br><span class="fs-14">(3 bottles)</span></div>
+                                    </div>
+                                    <div>
+                                        <div class="vp-price dis_red_line">
+                                            <span class="vp-price-sale">$238</span>
+                                            <span class="">$149</span>
+                                        </div>
+                                        <div class="text-end fw-600">$133.51</div>
+                                    </div>
+                                </label>
+                                </div>
 
-                        <div class="qure__product-action-inner mt-30 mt-md-40 mb-10 max-w-ctm"
-                            style="--max-w-ctm:500px">
+                                <div class="col qure__variant-item">
+                                <input type="radio" class="variant__input" name="supply-pack-bf" id="two-month-bf">
+                                <label for="two-month-bf" class="qure__variant-box">
+                                    <div class="bf-buy-Wrapper">
+                                        <div class="qv-frame">
+                                            <div class="qv-frame-inner">
+                                            <img src="sections/isolated/micro-infusion-pdp/images/derm_duo.webp" class="qv-img">
+                                            </div>
+                                        </div>
+                                        <div class="div">4 Months Supply<br><span class="fs-14">(2 bottles)</span></div>
+                                    </div>
+                                    <div>
+                                        <div class="vp-price dis_red_line">
+                                            <span class="vp-price-sale">$238</span>
+                                            <span class="">$149</span>
+                                        </div>
+                                        <div class="text-end fw-600">$133.51</div>
+                                    </div>
+                                </label>
+                                </div>
+
+                                <div class="col qure__variant-item">
+                                <input type="radio" class="variant__input" name="supply-pack-bf" id="one-month-bf">
+                                <label for="one-month-bf" class="qure__variant-box">
+                                <div class="bf-buy-Wrapper">
+                                    <div class="qv-frame">
+                                        <div class="qv-frame-inner">
+                                            <img src="sections/isolated/micro-infusion-pdp/images/derm_single.webp" class="qv-img">
+                                        </div>
+                                    </div>
+                                    <div class="div">2 Months Supply<br><span class="fs-14">(1 bottle)</span></div>
+                                    </div>
+                                    <div>
+                                        <div class="vp-price dis_red_line">
+                                            <span class="">$119</span>
+                                        </div>
+                                        <div class="text-end fw-600">$133.51</div>
+                                    </div>
+                                </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="qure__product-action-inner">
                             <button type="submit"
-                                class="add-cart-button product-form__submit btn btn--primary w-100">Pre-Order
-                                Now</button>
+                                class="add-cart-button product-form__submit btn btn--primary w-100">Buy Now & Save 26%</button>
                         </div>
                         <div class="product_klarna-dtls d-flex flex-wrap gap-2 align-items-center fs-14 justify-content-center max-w-ctm"
                             style="--max-w-ctm:500px">
@@ -174,7 +245,7 @@
                                 class="icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
                                 <img src="sections/isolated/protect-your-skin/images/dermatologist.svg" alt="dermatologist"
                                     class="mr-0 mr-md-10 mb-10 mb-md-0">
-                                <span>Dermatologist Reviewed </span>
+                                <span>30-Day Money-Back Guarantee</span>
                             </div>
                             <div
                                 class="icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
@@ -183,7 +254,7 @@
                                 <span>Free Shipping Over $100 </span>
                             </div>
                         </div>
-                        <div class="patch__product-batch mt-30 max-w-ctm" style="--max-w-ctm:500px">
+                        <div class="patch__product-batch mt-30 max-w-ctm d-none" style="--max-w-ctm:500px">
                             <div class="patch-d-header">
                                 <h4 class="fm-body fs-16 fw-600 mb-0">Next batch ships {date}:</h4>
                                 <p class="fs-14">Due to high demand, our {product name} is sold out. Order now and
@@ -318,7 +389,7 @@
                             class="col icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
                             <img src="sections/isolated/protect-your-skin/images/dermatologist.svg" alt="dermatologist"
                                 class="mr-0 mr-md-10 mb-10 mb-md-0">
-                            <span>Dermatologist Reviewed</span>
+                            <span>30-Day Money-Back Guarantee</span>
                         </div>
                         <div
                             class="col icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">

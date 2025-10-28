@@ -1746,10 +1746,12 @@ body.page\.hairgrowth-helmet-guide .tab-content a{
     font-family: "TT Commons";
     font-size: 18px;
 }
+.custom_gap{--column-gap:60px;}
 @media(max-width:767px) {
     .limited_edition{
         font-size: 16px;
     }
+    .custom_gap{--column-gap-mobile:30px !important;} 
 }
 .bg_marquee_section{background: #212428;}
 .bg_marquee_section .qure_shipping-content {color: #fff;}

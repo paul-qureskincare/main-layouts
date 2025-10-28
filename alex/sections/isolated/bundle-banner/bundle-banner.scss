@@ -85,6 +85,11 @@
 
         h3 {
             margin-bottom: 5px;
+
+            img {
+                vertical-align: middle;
+                filter: brightness(0) saturate(100%) invert(7%) sepia(5%) saturate(2568%) hue-rotate(175deg) brightness(92%) contrast(83%);
+            }
         }
 
         @keyframes pulse {
@@ -145,7 +150,7 @@
 
         .mini-bundles {
             display: grid;
-            grid-template-columns: calc(53.6% - 10px) repeat(2, calc(23.2% - 5px));
+            grid-template: auto / calc(53.6% - 10px) repeat(2, calc(23.2% - 5px));
             gap: 10px;
             width: 100%;
             max-width: 500px;
