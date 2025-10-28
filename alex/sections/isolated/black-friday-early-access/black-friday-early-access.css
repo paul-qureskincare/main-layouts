@@ -166,7 +166,7 @@
 .black-friday-early-access-footer a:hover{
   text-decoration:none;
 }
-@media only screen and (max-width:991px){
+@media screen and (max-width:991px){
   .black-friday-early-access .custom__block{
     padding-right:0;
   }
