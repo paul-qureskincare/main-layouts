@@ -239,11 +239,14 @@
     padding: 18px 0;
     position: relative;
     border-radius: 10px;
-    /* overflow: hidden; */
     border: 1px solid #DFE0E0;
     cursor: pointer;
     transition: border-color .4s ease;
     text-align: center;
+}
+.all-in-one-bf .qure__variant-box {
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .qure__variant-item>input {
