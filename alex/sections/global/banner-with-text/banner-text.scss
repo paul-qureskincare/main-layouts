@@ -14,6 +14,12 @@
     &.color-background {
         color: #fff;
         background: #212428;
+        
+        .banner-text--button {
+            color: #212428;
+            background: #fff;
+            border-color: #fff;
+        }
     }
 
     .custom__grid {
@@ -81,11 +87,19 @@
         }
 
         .btn {
-            margin-top: 60px;
+            margin-top: 34px;
 
             @include sm {
                 max-width: 280px;
                 margin-top: 15px;
+            }
+
+            & + span {
+                display: block;
+                margin-top: 8px;
+                color: #707172;
+                font-size: 14px;
+                text-align: center;
             }
         }
 
@@ -113,6 +127,17 @@
 
         img {
             width: 100%;
+            height: auto;
+            border-radius: 0;
+            
+            &[src$=".gif"] {
+                aspect-ratio: 6.2 / 5;
+                object-fit: cover;
+
+                @include md {
+                    aspect-ratio: unset;
+                }
+            }
         }
 
         .bf-discont-badge {
@@ -127,6 +152,7 @@
             justify-content: center;
             width: 140px;
             height: 140px;
+            color: #fff;
             font-weight: 600;
             font-size: 58px;
             line-height: 1;
