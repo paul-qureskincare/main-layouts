@@ -40,6 +40,7 @@
     display: flex;
     gap: 4px;
     justify-content: center;
+    margin-top: 10px;
 }
 .index .qure__product-price {
     justify-content: flex-start;
