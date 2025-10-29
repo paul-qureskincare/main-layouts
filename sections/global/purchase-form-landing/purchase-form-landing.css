@@ -650,6 +650,18 @@
 .qure__variant-label{
     margin: 25px 0;
 }
+.dis_red_line{
+    position: relative;
+}
+.dis_red_line:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #FF5429;
+    transform: rotate(5deg);
+    top: 10px;
+}
 @media(max-width:767px){
     .moneyback_guarantee{
         padding: 24px 16px;
