@@ -120,6 +120,9 @@ body.page\.microinfusion-safety-guide .ctm_cls_title_wrapper {
 body.page\.microinfusion-safety-guide-v15 .ctm_cls_title_wrapper {
     max-width: 330px;
 }
+body.page\.q-rejuvalight-pro-led-mask-guide .ctm_cls_title_wrapper {
+    max-width: 450px;
+}
 
 @media(min-width:768px){
     body.page\.microinfusion-safety-guide .ctm_cls_title_wrapper {
@@ -129,11 +132,15 @@ body.page\.microinfusion-safety-guide-v15 .ctm_cls_title_wrapper {
 @media(max-width:767px){
     body.page\.microinfusion-safety-guide .ctm_cls_title_wrapper {
         padding-bottom: 50px;
+        max-width: 230px;
     }
     body.page\.microinfusion-safety-guide-v15 .ctm_cls_title_wrapper {
         max-width: 235px;
         padding-bottom: 20px;
     }
+    body.page\.microinfusion-safety-guide .ctm_cls_title_wrapper {
+    max-width: 225px;
+}
 }
 
 /* css for targeting page banner content with the body class for specific pages */
@@ -159,3 +166,9 @@ body.page\.microinfusion-safety-guide-v15 .ctm_cls_title_wrapper {
     place-items: center;
 }
 /* css for page.bf-limited-edition-kit.html end */
+
+/* css for guide pages  */
+.imp_notice{font-size:16px;font-weight:600;padding-top:15px;margin-bottom:5px;}
+.read_guidelines{font-size:16px;font-weight:600;}
+@media(max-width:767px){.read_guidelines{font-weight:400;}}
+/* css for guide pages end */
