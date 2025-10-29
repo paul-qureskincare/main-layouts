@@ -584,7 +584,7 @@
 .page\.sunil-micro-infusion-pdp .qure__variant-box .qv-img {
     max-width: 70px;
 }
-}
+
 
 /* ============================ featured product bundle end ===========================*/
 
@@ -641,6 +641,14 @@
     border-radius: 10px;
     background: var(--Mist, #F6F6F7);
     padding: 32px 24px;
+}
+.hypo_acid_derm_mist {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.qure__variant-label{
+    margin: 25px 0;
 }
 @media(max-width:767px){
     .moneyback_guarantee{
