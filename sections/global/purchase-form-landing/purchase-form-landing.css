@@ -239,14 +239,11 @@
     padding: 18px 0;
     position: relative;
     border-radius: 10px;
+    /* overflow: hidden; */
     border: 1px solid #DFE0E0;
     cursor: pointer;
     transition: border-color .4s ease;
     text-align: center;
-}
-.all-in-one-bf .qure__variant-box {
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .qure__variant-item>input {
@@ -587,7 +584,7 @@
 .page\.sunil-micro-infusion-pdp .qure__variant-box .qv-img {
     max-width: 70px;
 }
-}
+
 
 /* ============================ featured product bundle end ===========================*/
 
@@ -644,6 +641,26 @@
     border-radius: 10px;
     background: var(--Mist, #F6F6F7);
     padding: 32px 24px;
+}
+.hypo_acid_derm_mist {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.qure__variant-label{
+    margin: 25px 0;
+}
+.dis_red_line{
+    position: relative;
+}
+.dis_red_line:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #FF5429;
+    transform: rotate(5deg);
+    top: 10px;
 }
 @media(max-width:767px){
     .moneyback_guarantee{
