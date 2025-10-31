@@ -94,9 +94,11 @@
 .qure__sticky-atc{
   opacity: 0;
   transition: all 0.4s ease-in;
+  height: 0;
 }
 .show_cta{
   opacity: 1;
+  height: auto;
 }
 /* product-mi-patches cta  */
 
