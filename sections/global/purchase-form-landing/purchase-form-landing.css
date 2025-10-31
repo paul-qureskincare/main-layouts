@@ -78,14 +78,9 @@
 .qure__price .price__sale {
     position: relative;
     color: #8B8C8E;
-    font-size: 20px;
     margin: 0 10px;
-}
-
-.qure__price .price__sale {
     text-decoration: none;
 }
-
 .qure__price .price__sale::after {
     content: '';
     position: absolute;
@@ -671,6 +666,36 @@
     gap: 15px;
     justify-content: space-between;
     font-size: 16px;
+}
+.skip_pause{
+    font-size: 14px;
+    text-align: start;
+}
+.price_wrap{
+    display: flex;
+    align-items: center;
+}
+.price_wrap .price__sale{
+    font-size: 18px;
+    margin-right: 0;
+}
+.price_dyn{
+    font-size: 16px;
+}
+.skip_pause a{
+    text-decoration: underline;
+    color: #212428;
+}
+.ctm_pri_cls{
+    font-size: 16px !important;
+    color: #212428 !important;
+}
+.qure__subscription-item.one_time_purchase .price--on-sale{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    flex-direction: column;
+    text-align: right;
 }
 @media(max-width:767px){
   .product_shower-action-inner{
