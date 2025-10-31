@@ -78,14 +78,9 @@
 .qure__price .price__sale {
     position: relative;
     color: #8B8C8E;
-    font-size: 20px;
     margin: 0 10px;
-}
-
-.qure__price .price__sale {
     text-decoration: none;
 }
-
 .qure__price .price__sale::after {
     content: '';
     position: absolute;
@@ -239,14 +234,11 @@
     padding: 18px 0;
     position: relative;
     border-radius: 10px;
+    /* overflow: hidden; */
     border: 1px solid #DFE0E0;
     cursor: pointer;
     transition: border-color .4s ease;
     text-align: center;
-}
-.all-in-one-bf .qure__variant-box {
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .qure__variant-item>input {
@@ -641,4 +633,73 @@
     font-weight: 600;
 }
 
+.hypo_acid_derm_mist {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.qure__variant-label{
+    margin: 25px 0;
+}
+.dis_red_line{
+    position: relative;
+}
+.dis_red_line:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #FF5429;
+    transform: rotate(5deg);
+    top: 10px;
+}
+.filter_pages_ext_cls{
+    text-align: start;
+}
+.product_shower-action-inner{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.subscription-item-row{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.skip_pause{
+    font-size: 14px;
+    text-align: start;
+}
+.price_wrap{
+    display: flex;
+    align-items: center;
+}
+.price_wrap .price__sale{
+    font-size: 18px;
+    margin-right: 0;
+}
+.price_dyn{
+    font-size: 16px;
+}
+.skip_pause a{
+    text-decoration: underline;
+    color: #212428;
+}
+.ctm_pri_cls{
+    font-size: 16px !important;
+    color: #212428 !important;
+}
+.qure__subscription-item.one_time_purchase .price--on-sale{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    flex-direction: column;
+    text-align: right;
+}
+@media(max-width:767px){
+  .product_shower-action-inner{
+    font-size: 18px;
+  }
+}
 /* black friday limited edition kit end */
