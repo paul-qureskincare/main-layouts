@@ -666,8 +666,8 @@
     text-align: start;
 }
 @media(max-width:767px){
-    .moneyback_guarantee{
-        padding: 24px 16px;
-    }
+  .product_shower-action-inner{
+    font-size: 18px;
+  }
 }
 /* black friday limited edition kit end */
