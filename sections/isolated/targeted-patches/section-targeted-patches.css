@@ -378,3 +378,25 @@ body.product\.dermal-mist .patch__product-variants { margin-top: 30px; }
     .qure_action_inner_wrapper{max-width: 100%}
 }
 /* select your supply blocks in product.dermal-mist end */
+
+
+/* HARCODE: NEED TO DELETE AFTER UPDATE PAGE LAYOUT */
+.product\.micro-infusion-limited-edition-bundle-1 {
+    .max-w-ctm + .d-none {
+        display: none !important;
+    }
+
+    .qure__swiper-wrapper + .d-flex {
+        display: none !important;
+    }
+
+    .review_videos {
+        padding-bottom: 0 !important;
+    }
+
+    @media (max-width: 767px) {
+        .accordion {
+            margin-top: -10px !important;
+        }
+    }
+}
