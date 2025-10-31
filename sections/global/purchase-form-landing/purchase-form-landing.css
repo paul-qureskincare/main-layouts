@@ -637,11 +637,7 @@
     border-radius: 12px;
     font-weight: 600;
 }
-.moneyback_guarantee{
-    border-radius: 10px;
-    background: var(--Mist, #F6F6F7);
-    padding: 32px 24px;
-}
+
 .hypo_acid_derm_mist {
     margin-bottom: 10px;
     font-size: 16px;
@@ -668,6 +664,13 @@
 .product_shower-action-inner{
     margin-top: 25px;
     margin-bottom: 10px;
+}
+.subscription-item-row{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+    font-size: 16px;
 }
 @media(max-width:767px){
   .product_shower-action-inner{
