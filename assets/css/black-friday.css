@@ -17,7 +17,7 @@
 }
 .qure__subscription-item .qure__subscription-btn + .qure__subscription-collapse {
     margin: 18px;
-    margin-top: -40px !important;
+    /* margin-top: -40px !important; */
 }
 .qure__subscription-item .qure__subscription-btn {
     padding: 14px 18px !important;
