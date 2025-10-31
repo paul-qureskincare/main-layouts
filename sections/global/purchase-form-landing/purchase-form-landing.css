@@ -665,6 +665,10 @@
 .filter_pages_ext_cls{
     text-align: start;
 }
+.product_shower-action-inner{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
 @media(max-width:767px){
   .product_shower-action-inner{
     font-size: 18px;
