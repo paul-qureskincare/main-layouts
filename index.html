@@ -111,7 +111,7 @@
                   <img src="alex/sections/global/banner-with-text/images/black-friday-sale.webp" alt="">
                   <h2>Save Up to 57%</h2>
                   <p>Your Favorite Products, Perfectly Bundled</p>
-                  <a href="#" class="banner-text--button btn btn--primary-white">Shop Bundles Now</a>
+                  <a href="#" class="banner-text--button btn">Shop Bundles Now</a>
                </div>
             </div>
             <div class="col-md-7 custom__block">
@@ -171,6 +171,30 @@
          loadScriptOnce('slider-script', 'assets/js/slider-with-thumb.js');
       });
    </script>
+   <!-- Banner with text end-->
+    
+   <!-- Banner with text -->
+   <link href="alex/sections/global/banner-with-text/banner-text.css" rel="stylesheet" type="text/css">
+   <div class="qure__section banner-with-text">
+      <div class="offset-right-container">
+         <div class="row custom__grid">
+            <div class="col-md-5 custom__block">
+               <div class="banner-with-text-content text-center">
+                  <img src="alex/sections/global/banner-with-text/images/black-friday-sale.webp" alt="">
+                  <h2>26% Off Sitewide*</h2>
+                  <p>Shop our biggest sale of the year. The week only.</p>
+                  <a href="#" class="banner-text--button btn">Shop Now</a>
+                  <span>*Excludes Black Friday bundles</span>
+               </div>
+            </div>
+            <div class="col-md-7 custom__block">
+               <div class="banner-text--media banner-text-mob-full">
+                  <img src="alex/sections/global/banner-with-text/images/stop-motion-square-v1.gif" alt="" />
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
    <!-- Banner with text end-->
    
    <!-- Bundle banners -->
@@ -243,6 +267,37 @@
       });
    </script>
    <!-- Bundle banner -->
+
+   <!-- Bundle banners -->
+    <link rel="stylesheet" href="alex/sections/isolated/bundle-banner/bundle-banner.css" />
+    <div class="bundle-banner bundle-banner-mini">
+        <div class="bundle-banner__content">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mini-bundles">
+                        <div class="mini-bundles__item" data-desc="Exclusive Bundles">
+                            <img src="alex/sections/isolated/bundle-banner/images/bundle-mini-1.webp" alt="" />
+                            <div class="bf-discont-badge" data-text-top="Up to" data-text-bottom="Off">57%</div>
+                        </div>
+                        <div class="mini-bundles__item">
+                            <img src="alex/sections/isolated/bundle-banner/images/bundle-mini-2.webp" alt="" />
+                        </div>
+                        <div class="mini-bundles__item">
+                            <img src="alex/sections/isolated/bundle-banner/images/bundle-mini-3.webp" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h3>Save Up to 57%</h3>
+                    <p>Your Favorite Products, Perfectly Bundled</p>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="btn btn--primary">Shop Bundles Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bundle banner -->
 
    <!-- -- press slider app out start -- -->
    <link rel="stylesheet" href="sections/isolated/press_slider/press-slider.css">
@@ -717,7 +772,7 @@
       <div class="container" style="--column-gap:24px; --column-gap-mobile:16px;">
          <div class="row custom__grid">
             <div class="col-6 col-md-3 custom__block">
-               <div class="qure__product-item">
+               <div class="qure__product-item silver-badge">
                   <a href="#" class="qure__product-img overflow-hidden position-relative d-block">
                      <div class="qure__product-main-img"><img
                            src="sections/isolated/top-products/images/micro-infusion-facial-system.webp" alt="" />
@@ -734,12 +789,18 @@
                      <h3 class="fm-body mb-0 qure__product-name">
                         <a class="limited-line capitalize d-block" href="#">Micro-Infusion Facial System</a>
                      </h3>
-                     <div class="qure__product-price mt-10">from {$dyn}</div>
+                     <div class="qure__product-price">
+                        <div class="dis_red_line">
+                           <span class="bef_price text-decoration-line-through">$238</span>
+                           <span class="aft_price">$149</span>
+                        </div>
+                        <div class="black_friday_price">$133.51</div>
+                     </div>
                   </div>
                </div>
             </div>
             <div class="col-6 col-md-3 custom__block">
-               <div class="qure__product-item">
+               <div class="qure__product-item silver-badge">
                   <a href="#" class="qure__product-img overflow-hidden position-relative d-block">
                      <div class="qure__product-main-img"><img
                            src="sections/isolated/top-products/images/q-rejuvalight-pro-facewear.webp" alt="" />
@@ -756,12 +817,18 @@
                      <h3 class="fm-body mb-0 qure__product-name">
                         <a class="limited-line capitalize d-block" href="#">Q-Rejuvalight Pro Facewear </a>
                      </h3>
-                     <div class="qure__product-price mt-10">{$dyn}</div>
+                     <div class="qure__product-price">
+                        <div class="dis_red_line">
+                           <span class="bef_price text-decoration-line-through">$238</span>
+                           <span class="aft_price">$149</span>
+                        </div>
+                        <div class="black_friday_price">$133.51</div>
+                     </div>
                   </div>
                </div>
             </div>
             <div class="col-6 col-md-3 custom__block">
-               <div class="qure__product-item">
+               <div class="qure__product-item silver-badge">
                   <a href="#" class="qure__product-img overflow-hidden position-relative d-block">
                      <div class="qure__product-main-img"><img
                            src="sections/isolated/top-products/images/all-in-one-face-serum.webp" alt="" />
@@ -776,12 +843,18 @@
                      <h3 class="fm-body mb-0 qure__product-name">
                         <a class="limited-line capitalize d-block" href="#">All-In-One Face Serum</a>
                      </h3>
-                     <div class="qure__product-price mt-10">{$dyn}</div>
+                     <div class="qure__product-price">
+                        <div class="dis_red_line">
+                           <span class="bef_price text-decoration-line-through">$238</span>
+                           <span class="aft_price">$149</span>
+                        </div>
+                        <div class="black_friday_price">$133.51</div>
+                     </div>
                   </div>
                </div>
             </div>
             <div class="col-6 col-md-3 custom__block">
-               <div class="qure__product-item">
+               <div class="qure__product-item silver-badge">
                   <a href="#" class="qure__product-img overflow-hidden position-relative d-block">
                      <div class="qure__product-main-img"><img
                            src="sections/isolated/top-products/images/micro-infusion-targeted-patches.webp" alt="" />
@@ -800,7 +873,13 @@
                      <h3 class="fm-body mb-0 qure__product-name">
                         <a class="limited-line capitalize d-block" href="#">Micro-Infusion Targeted Patches</a>
                      </h3>
-                     <div class="qure__product-price mt-10">{$dyn}</div>
+                     <div class="qure__product-price">
+                        <div class="dis_red_line">
+                           <span class="bef_price text-decoration-line-through">$238</span>
+                           <span class="aft_price">$149</span>
+                        </div>
+                        <div class="black_friday_price">$133.51</div>
+                     </div>
                   </div>
                </div>
             </div>

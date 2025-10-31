@@ -12,6 +12,11 @@
   background:#212428;
   color:#fff;
 }
+.banner-with-text.color-background .banner-text--button{
+  background:#fff;
+  border-color:#fff;
+  color:#212428;
+}
 .banner-with-text .custom__grid{
   --column-gap:100px;
   --column-gap-mobile:100px;
@@ -39,7 +44,14 @@
   font-size:22px;
 }
 .banner-with-text-content .btn{
-  margin-top:60px;
+  margin-top:34px;
+}
+.banner-with-text-content .btn+span{
+  color:#707172;
+  display:block;
+  font-size:14px;
+  margin-top:8px;
+  text-align:center;
 }
 .banner-with-text-content.text-center .btn{
   width:100%;
@@ -54,7 +66,14 @@
   position:relative;
 }
 .banner-with-text .banner-text--media img{
+  border-radius:0;
+  height:auto;
   width:100%;
+}
+.banner-with-text .banner-text--media img[src$=".gif"]{
+  aspect-ratio:6.2/5;
+  -o-object-fit:cover;
+     object-fit:cover;
 }
 .banner-with-text .banner-text--media .bf-discont-badge{
   display:-webkit-box;
@@ -76,6 +95,7 @@
       -ms-flex-pack:center;
   background:#ff5429;
   border-radius:100px;
+  color:#fff;
   font-size:58px;
   font-weight:600;
   height:140px;
@@ -294,6 +314,9 @@
   }
   .banner-with-text .banner-text--media{
     margin-top:10px;
+  }
+  .banner-with-text .banner-text--media img[src$=".gif"]{
+    aspect-ratio:unset;
   }
   .banner-with-text .banner-text--media .bf-discont-badge{
     font-size:36px;
