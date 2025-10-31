@@ -587,7 +587,7 @@
 .page\.sunil-micro-infusion-pdp .qure__variant-box .qv-img {
     max-width: 70px;
 }
-}
+
 
 /* ============================ featured product bundle end ===========================*/
 
@@ -640,14 +640,5 @@
     border-radius: 12px;
     font-weight: 600;
 }
-.moneyback_guarantee{
-    border-radius: 10px;
-    background: var(--Mist, #F6F6F7);
-    padding: 32px 24px;
-}
-@media(max-width:767px){
-    .moneyback_guarantee{
-        padding: 24px 16px;
-    }
-}
+
 /* black friday limited edition kit end */
