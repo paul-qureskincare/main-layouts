@@ -1,0 +1,30 @@
+name: Create PR on main-r2 after merging to main
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+    paths-ignore:
+      - '.github/workflows/**'
+
+jobs:
+  create-pr:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          token: ${{ secrets.PAT_PR_MIRROR }}
+
+      - name: Create Pull Request on main-r2
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.PAT_PR_MIRROR }}
+          repository: paul-qureskincare/main-r2
+          base: main
+          head: main
+          title: 'Mirror PR from main repo'
+          body: 'Automatically created PR mirroring merged changes from main repo.'
