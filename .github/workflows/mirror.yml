@@ -1,9 +1,11 @@
 name: Mirror main branch to main-r2
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types: [closed]
+    branches: [main]
+    paths-ignore:
+      - '.github/workflows/**'
 
 jobs:
   mirror:
