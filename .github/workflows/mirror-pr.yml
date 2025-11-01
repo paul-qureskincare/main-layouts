@@ -1,4 +1,4 @@
-name: Mirror PR to main-r2
+name: Mirror main-layouts to main-r2
 
 on:
   pull_request:
