@@ -1,8 +1,9 @@
-name: Mirror PR on Merge
+name: Mirror PR to main-r2
 
 on:
   pull_request:
     types: [closed]
+    branches: [main]
 
 jobs:
   mirror-pr:
@@ -10,39 +11,17 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout main-layouts
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          ref: ${{ github.event.pull_request.base.ref }}
-      
-      - name: Configure Git
-        run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-      
-      - name: Push to main-r2
-        run: |
-          git remote add mirror https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/paul-qureskincare/main-r2.git
-          git push mirror ${{ github.event.pull_request.base.ref }}
-      
       - name: Create PR in main-r2
         uses: actions/github-script@v7
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.MIRROR_PR_PAT }}
           script: |
             const pr = context.payload.pull_request;
-            
-            try {
-              const newPR = await github.rest.pulls.create({
-                owner: 'paul-qureskincare',
-                repo: 'main-r2',
-                title: `[Mirror] ${pr.title}`,
-                head: pr.head.ref,
-                base: pr.base.ref,
-                body: `${pr.body}`
-              });
-              console.log(`✅ PR was added: ${newPR.data.html_url}`);
-            } catch (error) {
-              console.log('ℹ️ PR is already exists:', error.message);
-            }
+            await github.rest.pulls.create({
+              owner: 'paul-qureskincare',
+              repo: 'main-r2',
+              title: `[Mirror] ${pr.title}`,
+              head: pr.head.ref,
+              base: 'main',
+              body: pr.body
+            });
