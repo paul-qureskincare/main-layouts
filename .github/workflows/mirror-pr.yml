@@ -21,7 +21,7 @@ jobs:
               owner: 'paul-qureskincare',
               repo: 'main-r2',
               title: `[Mirror] ${pr.title}`,
-              head: pr.head.ref,
+              head: 'main',
               base: 'main',
               body: pr.body
             });
