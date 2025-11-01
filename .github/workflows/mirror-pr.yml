@@ -20,13 +20,13 @@ jobs:
       
       - name: Push main to main-r2
         run: |
-          git remote add mirror https://x-access-token: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@github.com/paul-qureskincare/main-r2.git
+          git remote add mirror https://x-access-token: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@github.com/paul-qureskincare/main-r2.git
           git push mirror main --force
       
       - name: Create PR in main-r2
         uses: actions/github-script@v7
         with:
-          github-token: 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
+          github-token: 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
           script: |
             const pr = context.payload.pull_request;
             await github.rest.pulls.create({
