@@ -1,0 +1,54 @@
+name: Mirror PR to main-r2
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  mirror:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout main repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Clone second repository (main-r2)
+        run: |
+          git clone https://github.com/paul-qureskincare/main-r2.git second-repo
+          cd second-repo
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+      - name: Copy merged changes to second repo
+        run: |
+          rsync -av --delete --exclude='.git' ./ ./second-repo/
+
+      - name: Commit & push mirrored branch
+        run: |
+          cd second-repo
+          BRANCH="mirror-${{ github.event.pull_request.number }}"
+          git checkout -b $BRANCH
+          git add .
+          git commit -m "Mirror of PR #${{ github.event.pull_request.number }}: ${{ github.event.pull_request.title }}"
+          git push origin $BRANCH
+
+      - name: Create pull request in second repo
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: paul-qureskincare/main-r2
+          title: "${{ github.event.pull_request.title }}"
+          body: |
+            🔁 This PR mirrors [original PR #${{ github.event.pull_request.number }}](${{ github.event.pull_request.html_url }})  
+            from the main repository **${{ github.repository }}**.
+            
+            Original author: @${{ github.event.pull_request.user.login }}
+          head: mirror-${{ github.event.pull_request.number }}
+          base: main
