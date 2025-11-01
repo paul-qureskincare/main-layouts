@@ -16,7 +16,7 @@ jobs:
       - name: Checkout main
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: staging
           token: ${{ secrets.PAT_PR_MIRROR }}
           fetch-depth: 0
       
