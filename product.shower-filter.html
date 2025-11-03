@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/vendor.css">
     <link rel="stylesheet" href="assets/css/spacings.css">
     <link href="assets/css/theme-fonts.css" rel="stylesheet" />
+    <link href="assets/css/black-friday.css" rel="stylesheet" />
     <link href="assets/css/base.css" rel="stylesheet" />
     <!-- Loading HTML Files -->
    <script src="assets/js/fileloader.js"></script>
@@ -177,8 +178,12 @@
                                 src="assets/images/cyan_blue_rating.svg" alt="">
                             <span><strong>4.8</strong>/5 Rated by Customers</span>
                         </div>
-                        <div class="fs-16 mb-10 mt-5">SHOWER FILTER</div>
-                        <h1 class="product_shower-title mb-30">Save your hair and skin from dryness and irritation</h1>
+                        <div class="hypo_acid_derm_mist">SHOWER FILTER</div>
+                        <h1 class="qure__product-title purify_skin">Save your hair and skin from dryness and irritation</h1>
+                        <div class="black_friday_wrapper">
+                            <p class="black_friday_pricing">BLACK FRIDAY</p>
+                            <a href="" class="save_perc">SAVE 26%</a>
+                        </div>
                         <div class="shower__single-shortdes">
                             <ul>
                                 <li>Clinically proven to increase skin moisture by 15%, and scalp moisture by 22% after just
@@ -193,7 +198,7 @@
                         </div>
                         <div class="border-top my-25"></div>
                         <div class="product_shower-variants">
-                            <div class="qure__variant-label mb-15">Select Your Color:</div>
+                            <div class="qure__variant-label">Select Your Color:</div>
                             <div class="d-flex col-gap" style="--col-gap:12px">
                                 <div class="col qure__variant-item">
                                     <input type="radio" id="white" name="color" class="variant__input" checked="">
@@ -232,7 +237,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product_shower-subscription my-25">
+                        <div class="product_shower-subscription">
                             <div class="qure__variant-label">Select Your Delivery:</div>
                         </div>
                         <div class="qure__subscription" id="qure__subscription">
@@ -243,61 +248,71 @@
                                 <button class="qure__subscription-btn" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#subscribe_and_save" aria-expanded="true"
                                     aria-controls="subscribe_and_save" data-btnlabel="Subscribe Now &amp; Save 30%">
-                                    <div class="qure__sbs-label d-flex align-items-center gap-2">Subscribe &amp; <span
-                                            class="product_shower-label">SAVE {dyn}%</span></div>
-                                    <div class="qure__price price--on-sale d-flex align-items-center">
-                                        <div class="price__sale mr-0 fs-18">{$dyn}</div>
-                                        <div class="price__regular fs-18">{$dyn}</div>
-                                    </div>
-                                    
-                                </button>
-                                <div id="subscribe_and_save" class="qure__subscription-collapse collapse show"
+                                    <div class="qure__sbs-label filter_pages_ext_cls">Subscribe &amp; SAVE<span
+                                            class="product_shower-label d-none">SAVE {dyn}%</span>
+                                        
+                                          <div id="subscribe_and_save" class="qure__subscription-collapse collapse show"
                                         data-bs-parent="#qure__subscription" style="">
-                                        <div class="qure__subscription-body p-0 mt-5">
+                                        <div class="qure__subscription-body">
                                             <div
-                                                class="subscription-item-row d-flex align-items-center gap-4 justify-content-between fs-16">
+                                                class="subscription-item-row">
                                                 <div class="subscription-item-title">
                                                     <div class="div">One Time: Showerhead + 1 Filter</div>
                                                 </div>
                                             </div>
                                             <div
-                                                class="subscription-item-row d-flex align-items-center gap-4 justify-content-between fs-16">
+                                                class="subscription-item-row">
                                                 <div class="subscription-item-title">
                                                     <div class="qure__price div">Every 90 days: Filter Refill (<span
-                                                            class="price__sale fs-16">{$dyn}</span> {$dyn})</div>
+                                                            class="price__sale price_dyn">{$dyn}</span> {$dyn})</div>
                                                 </div>
                                             </div>
-                                            <div class="fs-14 text-start">Skip, pause or cancel anytime. <a href=""
-                                                    class="text-decoration-underline" style="--base-color: #212428;">See more
+                                            <div class="skip_pause">Skip, pause or cancel anytime. <a href="#">See more
                                                     details</a></div>
                                         </div>
                                     </div>
+                                </div>
+                                        <div>
+                                            <div class="qure__price price--on-sale price_wrap dis_red_line">
+                                                <div class="price__sale">$238</div>
+                                                <div class="price__regular ctm_pri_cls">$149</div>
+                                            </div>
+                                            <div class="qure_bf_price">
+                                                <div class="price__regular ctm_pri_cls">$133.51</div>
+                                            </div>
+                                        </div>
+                                    
+                                </button>
+                              
                             </div>
                             <div class="qure__subscription-item one_time_purchase">
                                 <button class="qure__subscription-btn collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#one_time_purchase" aria-expanded="false"
                                     aria-controls="one_time_purchase" data-btnlabel="Buy Now">
-                                    <div class="qure__sbs-label d-flex align-items-center gap-3">One-Time Purchase <span
-                                            class="product_shower-label">SAVE 35%</span></div>
-                                    <div
-                                        class="qure__price price--on-sale d-flex flex-wrap align-items-end flex-column text-right">
-                                        <div class="price__regular fs-18">$149</div>
-                                    </div>
-                                    
-                                </button>
-                               <div id="one_time_purchase" class="qure__subscription-collapse collapse"
-                                        data-bs-parent="#qure__subscription" style="">
-                                        <div class="qure__subscription-body p-0 mt-5">
+                                    <div class="qure__sbs-label filter_pages_ext_cls">One-Time Purchase <span
+                                            class="product_shower-label d-none">SAVE 35%</span>
+                                          <div id="one_time_purchase" class="qure__subscription-collapse collapse"
+                                        data-bs-parent="#qure__subscription">
+                                        <div class="qure__subscription-body">
                                             <div
-                                                class="subscription-item-row d-flex align-items-center gap-4 justify-content-between fs-16">
+                                                class="subscription-item-row">
                                                 <div class="subscription-item-title">
-                                                    <div class="div">Qure Faucet Filter</div>
+                                                    <div class="div">One Time: Showerhead + 1 Filter</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                    <div
+                                        class="qure__price price--on-sale">
+                                        <div class="price__regular ctm_pri_cls dis_red_line">$119</div>
+                                        <div class="price__regular ctm_pri_cls qure_bf_price">$133.51</div> 
+                                    </div>
+                                    
+                                </button>
+                             
                             </div>
-                            <div class="product_shower-action-inner mt-25 mb-10">
+                            <div class="product_shower-action-inner"> 
                                 <button type="submit" class="btn btn--primary w-100" id="qr__submit">Subscribe Now &amp;
                                     Save 50%</button>
                             </div>

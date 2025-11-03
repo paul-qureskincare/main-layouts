@@ -22,3 +22,9 @@
 .qure__subscription-item .qure__subscription-btn {
     padding: 14px 18px !important;
 }
+body.product\.shower-filter-replacement .one_time_purchase .qure__subscription-btn{
+    align-items: center;
+}
+body.product\.shower-filter-replacement .one_time_purchase .qure__subscription-collapse{
+    display: none;
+}
