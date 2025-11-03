@@ -526,8 +526,9 @@
     background: var(--color-orange);
     color: var(--white-color);
 }
-.qure__variant-item .qv-frame img{
-    max-width: 80px;
+.qure__variant-item .qv-frame img {
+    max-width: 60px;
+    height: 50px;
 }
 /* ================ Best Value Flag ================ */ 
 .best__value .qure__variant-box{
