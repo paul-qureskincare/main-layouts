@@ -1764,3 +1764,7 @@ body.page\.hairgrowth-helmet-guide .tab-content a{
     justify-content: center;
     padding: 0 10px;
 }
+.faq_content a{
+    color: #212428;
+    text-decoration: underline;
+}
