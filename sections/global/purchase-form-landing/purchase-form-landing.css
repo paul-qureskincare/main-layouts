@@ -638,6 +638,9 @@
 .all-in-one-bf{
     display: unset !important;
 }
+.patch__product-variants .patch__variant-label {
+    margin: 25px 0 0;
+}
 /* all in one bf section css ends */
 
 /* black friday limited edition kit start */
@@ -656,6 +659,10 @@
 }
 .qure__variant-label{
     margin: 25px 0;
+}
+.product_shower-action-inner {
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 .dis_red_line{
     position: relative;

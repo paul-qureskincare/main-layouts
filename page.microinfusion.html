@@ -47,7 +47,7 @@
          <div class="row custom__grid">
             <div class="col-lg-6 custom__block">
                <div class="qure-product-details">
-                  <slide-with-thumbs class="tp-product-gallery qure__swiper-wrapper d-block d-lg-none mb-30">
+                  <slide-with-thumbs class="tp-product-gallery qure__swiper-wrapper d-block d-lg-none">
                      <!-- Galler start-->
                      <div class="swiper qure__product-gallery qure__swiper-gallery" data-section-id="tp-gallery-desktop"
                         data-mobile="3" data-tablet="3" data-desktop="4" data-autoplay="false" data-loop="false"
@@ -233,7 +233,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="patch__product-variants">
+                  <div class="patch__product-variants d-none">
                      <div class="qure__variant-label">Select Your supply:</div>
                      <div class="d-flex col-gap best__value" style="--col-gap:12px; --col-gap-mb: 6px;">
                         <div class="col qure__variant-item">
@@ -289,20 +289,89 @@
                      </div>
 
                   </div>
-                  <div class="qure__product-action-inner mt-30 mt-md-40 mb-10 max-w-ctm" style="--max-w-ctm:500px">
+                  <div class="patch__product-variants">
+                     <div class="patch__variant-label">Select Your supply:</div>
+                     <div class="d-flex col-gap best__value all-in-one-bf" style="--col-gap:12px; --col-gap-mb: 6px;">
+
+                        <div class="col qure__variant-item">
+                               <div class="vp-best-value">Best Value <i class="fa-sharp fa-solid fa-star-sharp"></i>
+                              </div>
+                           <input type="radio" class="variant__input" name="supply-pack-bf" id="three-month-bf" checked="">
+                           <label for="three-month-bf" class="qure__variant-box">
+                              <div class="bf-buy-Wrapper">
+                              <div class="qv-frame">
+                                 <div class="qv-frame-inner">
+                                    <img src="sections/isolated/micro-infusion-pdp/images/3_month_mixed.webp" class="qv-img">
+                                 </div>
+                              </div>
+                              <div class="div">3 Month Supply<br><span class="fs-14">6 Micro-Infusion treatments</span></div>
+                              </div>
+                              <div>
+                                 <div class="vp-price dis_red_line">
+                                    <span class="vp-price-sale">$238</span>
+                                    <span class="">$149</span>
+                                 </div>
+                                 <div class="text-end fw-600">$133.51</div>
+                              </div>
+                           </label>
+                        </div>
+
+                        <div class="col qure__variant-item">
+                           <input type="radio" class="variant__input" name="supply-pack-bf" id="two-month-bf">
+                           <label for="two-month-bf" class="qure__variant-box">
+                              <div class="bf-buy-Wrapper">
+                                 <div class="qv-frame">
+                                    <div class="qv-frame-inner">
+                                       <img src="sections/isolated/micro-infusion-pdp/images/2_month_mixed.webp" class="qv-img">
+                                    </div>
+                                 </div>
+                                 <div class="div">2 Month Supply<br><span class="fs-14">4 Micro-Infusion treatments</span></div>
+                              </div>
+                              <div>
+                                 <div class="vp-price dis_red_line">
+                                    <span class="vp-price-sale">$238</span>
+                                    <span class="">$149</span>
+                                 </div>
+                                  <div class="text-end">$133.51</div>
+                              </div>
+                           </label>
+                        </div>
+
+                        <div class="col qure__variant-item">
+                           <input type="radio" class="variant__input" name="supply-pack-bf" id="one-month-bf">
+                           <label for="one-month-bf" class="qure__variant-box">
+                           <div class="bf-buy-Wrapper">
+                              <div class="qv-frame">
+                                 <div class="qv-frame-inner">
+                                    <img src="sections/isolated/micro-infusion-pdp/images/1_month_mixed.webp" class="qv-img">
+                                 </div>
+                              </div>
+                              <div class="div">1 Month Supply<br><span class="fs-14">2 Micro-Infusion treatments</span></div>
+                              </div>
+                              <div>
+                                 <div class="vp-price dis_red_line">
+                                    <span class="">$119</span>
+                                 </div>
+                                  <div class="text-end">$133.51</div>
+                              </div>
+                           </label>
+                        </div>
+
+                     </div>
+                  </div>
+                  <div class="product_shower-action-inner">
                      <button type="submit" class="add-cart-button product-form__submit btn btn--primary w-100">Buy
                         Now & Save {dyn}%</button>
                   </div>
                   <div
-                     class="product_klarna-dtls d-flex flex-wrap gap-2 align-items-center fs-14 justify-content-center max-w-ctm"
-                     style="--max-w-ctm:500px">
+                     class="product_klarna-dtls">
                      OR pay 4 monthly payments of {$dyn} with
                      <img src="sections/isolated/targeted-patches/images/klarna.svg" />
                      <img src="sections/isolated/targeted-patches/images/sezzle.svg" />
                      <img src="sections/isolated/targeted-patches/images/afterpay.svg" />
 
                   </div>
-                  <div class=" max-w-ctm" style="--max-w-ctm:500px">
+                  <div class="">
                      <div class="patch__product-certified my-15">
                         <ul class="patch-dr-list">
                            <li><img src="sections/isolated/targeted-patches/images/crt-1.webp" /></li>
