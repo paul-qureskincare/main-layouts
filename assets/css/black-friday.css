@@ -17,7 +17,6 @@
 }
 .qure__subscription-item .qure__subscription-btn + .qure__subscription-collapse {
     margin: 18px;
-    /* margin-top: -40px !important; */
 }
 .qure__subscription-item .qure__subscription-btn {
     padding: 14px 18px !important;
@@ -35,4 +34,10 @@
 }
 .bundle_price .black_friday_pricing {
     text-transform: uppercase;
+}
+body.product\.shower-filter-replacement .one_time_purchase .qure__subscription-btn{
+    align-items: center;
+}
+body.product\.shower-filter-replacement .one_time_purchase .qure__subscription-collapse{
+    display: none;
 }
