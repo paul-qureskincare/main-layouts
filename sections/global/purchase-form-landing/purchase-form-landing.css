@@ -78,14 +78,9 @@
 .qure__price .price__sale {
     position: relative;
     color: #8B8C8E;
-    font-size: 20px;
     margin: 0 10px;
-}
-
-.qure__price .price__sale {
     text-decoration: none;
 }
-
 .qure__price .price__sale::after {
     content: '';
     position: absolute;
@@ -440,6 +435,12 @@
     padding: 8px 20px;
     background: #F6F6F7;
     border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 0;
 }
 .qure__featured-product-bundle  .accordion-body {
     padding: 0 10px 8px;
@@ -525,6 +526,10 @@
     background: var(--color-orange);
     color: var(--white-color);
 }
+.qure__variant-item .qv-frame img {
+    max-width: 60px;
+    height: 50px;
+}
 /* ================ Best Value Flag ================ */ 
 .best__value .qure__variant-box{
     padding: 12px 0 24px;
@@ -563,6 +568,12 @@
 }
 
 @media(max-width: 767px) {
+    .qure__variant-item .qv-frame img{
+        max-width: 50px;
+    }
+    .qure__product-rating {
+        margin-top: 30px;
+    }
     .product_shower-title {
         font-size: 32px;
     }
@@ -584,7 +595,7 @@
 .page\.sunil-micro-infusion-pdp .qure__variant-box .qv-img {
     max-width: 70px;
 }
-}
+
 
 /* ============================ featured product bundle end ===========================*/
 
@@ -627,6 +638,9 @@
 .all-in-one-bf{
     display: unset !important;
 }
+.patch__product-variants .patch__variant-label {
+    margin: 25px 0 0;
+}
 /* all in one bf section css ends */
 
 /* black friday limited edition kit start */
@@ -637,14 +651,90 @@
     border-radius: 12px;
     font-weight: 600;
 }
-.moneyback_guarantee{
-    border-radius: 10px;
-    background: var(--Mist, #F6F6F7);
-    padding: 32px 24px;
+
+.hypo_acid_derm_mist {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.qure__variant-label{
+    margin: 25px 0;
+}
+.product_shower-action-inner {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.dis_red_line{
+    position: relative;
+}
+.dis_red_line:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #FF5429;
+    transform: rotate(5deg);
+    top: 10px;
+}
+.filter_pages_ext_cls{
+    text-align: start;
+}
+.product_shower-action-inner{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.subscription-item-row{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.skip_pause{
+    font-size: 14px;
+    text-align: start;
+}
+.price_wrap{
+    display: flex;
+    align-items: center;
+}
+.price_wrap .price__sale{
+    font-size: 18px;
+    margin-right: 0;
+}
+.price_dyn{
+    font-size: 16px;
+}
+.skip_pause a{
+    text-decoration: underline;
+    color: #212428;
+}
+.ctm_pri_cls{
+    font-size: 16px !important;
+    color: #212428 !important;
+}
+.qure__subscription-item.one_time_purchase .price--on-sale{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    flex-direction: column;
+    text-align: right;
+}
+.patch__product-batch{
+    margin-top: 20px;
+}
+.next_batch_ships{
+    font-family: "TT Commons";
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.due_to_demand{
+    font-size: 14px;
 }
 @media(max-width:767px){
-    .moneyback_guarantee{
-        padding: 24px 16px;
-    }
+  .product_shower-action-inner{
+    font-size: 18px;
+  }
 }
 /* black friday limited edition kit end */

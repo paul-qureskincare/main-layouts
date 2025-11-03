@@ -1755,3 +1755,12 @@ body.page\.hairgrowth-helmet-guide .tab-content a{
 }
 .bg_marquee_section{background: #212428;}
 .bg_marquee_section .qure_shipping-content {color: #fff;}
+.product_klarna-dtls{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    font-size: 14px;
+    justify-content: center;
+    padding: 0 10px;
+}
