@@ -39,9 +39,8 @@
     <!-- SECTION LIST -->
     <!-- Section Featured Product Bundle -->
     <link rel="stylesheet" href="sections/global/purchase-form-landing/purchase-form-landing.css" />
-    <div id="buy_box" class="qure__featured-product-bundle qure__section"
-        style="--section-padding-top: 40px; --section-padding-bottom: 80px;">
-        <div class="container" style="--column-gap:100px; --column-gap-mobile:30px;">
+    <div id="buy_box" class="qure__featured-product-bundle qure__section">
+        <div class="container custom_gap">
             <div class="row justify-content-between custom__grid">
                 <div class="col-md-6 custom__block">
                     <slide-with-thumbs class="featured-product-gallery qure__swiper-wrapper d-md-none">
@@ -245,7 +244,7 @@
                         </div>
                         <!-- Thumbnails End-->
                     </slide-with-thumbs>
-                    <div class="product__label mt-0 mt-lg-40 mb-15">Get The Best Results With</div>
+                    <div class="product__label get_best_results">Get The Best Results With</div>
                     <div class="swiper qure__swiper" id="qure__swiper-best-results" data-section-id="best-results"
                         data-autoplay="false" data-loop="false" data-mobile="1.4" data-tablet="2" data-desktop="2"
                         data-spacing="12" data-pagination-fraction="true">
@@ -256,8 +255,7 @@
                                         src="sections/isolated/targeted-patches/images/result-1.webp" alt="">
                                     <div class="patch__result-content">
                                         All-In One Face Serum
-                                        <button class="btn btn--primary btn-sm mt-10 w-100"
-                                            style="--btn-sm-padding: 7px 20px;">Add - {$dyn}</button>
+                                        <button class="btn btn--primary btn_sm_ext">Add - {$dyn}</button>
                                     </div>
                                 </div>
                             </div>
@@ -268,31 +266,30 @@
                                         alt="dermal mist">
                                     <div class="patch__result-content">
                                         Dermal Mist (Duo - 100ml + 15ml)
-                                        <button class="btn btn--primary btn-sm mt-10 w-100"
-                                            style="--btn-sm-padding: 7px 20px;">Add -
+                                        <button class="btn btn--primary btn_sm_ext">Add -
                                             {$dyn}</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex d-lg-none flex-nowrap align-items-start justify-content-center col-gap mt-30">
+                    <div class="product_trust_highlights">
                         <div
-                            class="col icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
+                            class="product_trust_highlights_cols">
                             <img src="sections/isolated/protect-your-skin/images/dermatologist.svg" alt="dermatologist"
-                                class="mr-0 mr-md-10 mb-10 mb-md-0">
-                            <span>30-Day Money-Back Guarantee</span>
+                                class="product_trust_icon">
+                            <span>Dermatologist Reviewed</span>
                         </div>
                         <div
-                            class="col icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
+                            class="product_trust_highlights_cols">
                             <img src="sections/isolated/protect-your-skin/images/shipping.svg" alt="shipping"
-                                class="mr-0 mr-md-10 mb-10 mb-md-0">
+                                class="product_trust_icon">
                             <span>Free World-Wide Shipping over {$dyn}</span>
                         </div>
                         <div
-                            class="col icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
+                            class="product_trust_highlights_cols">
                             <img src="sections/isolated/protect-your-skin/images/backed_science.svg" alt="dermatologist"
-                                class="mr-0 mr-md-10 mb-10 mb-md-0">
+                                class="product_trust_icon">
                             <span>Backed by Science </span>
                         </div>
                     </div>
