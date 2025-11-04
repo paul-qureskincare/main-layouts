@@ -777,6 +777,11 @@
     flex-wrap: wrap;
     gap: 15px;
 }
+.progress_bar_blue{
+    --progress-bg:#91BAEC;
+    --text-color:#212428;
+    --progress-width:48%;
+}
 @media(max-width:767px){
     .product_trust_highlights_cols{
         text-align: center;
