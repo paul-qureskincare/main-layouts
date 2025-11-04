@@ -13,7 +13,7 @@
    <link href="assets/css/black-friday.css" rel="stylesheet" />
    <link href="assets/css/base.css" rel="stylesheet" />
    <!-- Loading HTML Files -->
-   <script src="assets/js/fileloader.js"></script>
+   <script src="assets/js/fileloader.js"></script> 
 
 </head>
 
@@ -41,9 +41,8 @@
 
    <!-- section-targeted-patches -->
    <link rel="stylesheet" href="sections/global/purchase-form-landing/purchase-form-landing.css">
-   <div id="buy_box" class="qure__trageted-patches qure__section"
-      style="--section-padding-top: 40px; --section-padding-bottom: 80px; --section-padding-top-mob: 20px; --section-padding-bottom-mob: 20px;">
-      <div class="container" style="--column-gap:80px; --column-gap-mobile:30px;">
+   <div id="buy_box" class="qure__featured-product-bundle qure__section">
+      <div class="container custom_gap">
          <div class="row custom__grid">
             <div class="col-lg-6 custom__block">
                <div class="qure-product-details">
@@ -199,7 +198,7 @@
                   <div class="border-top my-25"></div>
                   <div class="product_shower-variants">
                      <div class="qure__variant-label">Select Your Serum:</div>
-                     <div class="d-flex col-gap" style="--col-gap:12px">
+                     <div class="variants_wrapper">
                         <div class="col qure__variant-item">
                            <input type="radio" id="white" name="serum_main" class="variant__input">
                            <label for="white" class="qure__variant-box">
@@ -386,20 +385,20 @@
                      <div
                         class="icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
                         <img src="sections/isolated/protect-your-skin/images/dermatologist.svg" alt="dermatologist"
-                           class="mr-0 mr-md-10 mb-10 mb-md-0">
+                           class="product_trust_icon">
                         <span>30-Day Money-Back Guarantee </span>
                      </div>
                      <div
                         class="icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
                         <img src="sections/isolated/protect-your-skin/images/shipping.svg" alt="shipping"
-                           class="mr-0 mr-md-10 mb-10 mb-md-0">
+                           class="product_trust_icon">
                         <span>Free Shipping over {$dyn}</span>
                      </div>
                   </div>
-                  <div class="patch__product-batch mt-30 max-w-ctm" style="--max-w-ctm:500px">
+                  <div class="patch__product-batch">
                      <div class="patch-d-header">
-                        <h4 class="fm-body fs-16 fw-600 mb-0">Next batch ships {date}:</h4>
-                        <p class="fs-14">Due to high demand, our {product name} is sold out. Order now and secure
+                        <h4 class="next_batch_ships">Next batch ships {date}:</h4>
+                        <p class="due_to_demand">Due to high demand, our {product name} is sold out. Order now and secure
                            yours from the next shipment.</p>
                      </div>
                      <div class="progress__bar-container w-100">
@@ -574,8 +573,7 @@
                               src="sections/isolated/n&d-slider/images/q_rejuv_n&d.webp" alt="">
                            <div class="patch__result-content">
                               Neck & Décolletage LED Device
-                              <button class="btn btn--primary btn-sm mt-10 w-100"
-                                 style="--btn-sm-padding: 7px 20px; --btn-font-mob:18px;">Add - {$dyn}</button>
+                              <button class="btn btn--primary btn_sm_ext">Add - {$dyn}</button>
                            </div>
                         </div>
                      </div>
@@ -585,36 +583,35 @@
                               src="sections/isolated/targeted-patches/images/result-1.webp" alt="">
                            <div class="patch__result-content">
                               All-In One Face Serum
-                              <button class="btn btn--primary btn-sm mt-10 w-100"
-                                 style="--btn-sm-padding: 7px 20px; --btn-font-mob:18px;">Add - {$dyn}</button>
+                              <button class="btn btn--primary btn_sm_ext">Add - {$dyn}</button>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
 
-               <div class="d-flex d-lg-none flex-nowrap align-items-start justify-content-center col-gap mt-30">
+               <div class="product_trust_highlights">
                   <div
-                     class="col icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
+                     class="product_trust_highlights_cols">
                      <img src="sections/isolated/protect-your-skin/images/dermatologist.svg" alt="dermatologist"
-                        class="mr-0 mr-md-10 mb-10 mb-md-0">
+                        class="product_trust_icon">
                      <span>30-Day Money-Back Guarantee</span>
                   </div>
                   <div
-                     class="col icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
+                     class="product_trust_highlights_cols">
                      <img src="sections/isolated/protect-your-skin/images/shipping.svg" alt="shipping"
-                        class="mr-0 mr-md-10 mb-10 mb-md-0">
+                        class="product_trust_icon">
                      <span>Free World-Wide Shipping over {$dyn}</span>
                   </div>
                   <div
-                     class="col icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
+                     class="product_trust_highlights_cols">
                      <img src="sections/isolated/protect-your-skin/images/backed_science.svg" alt="backed by science"
-                        class="mr-0 mr-md-10 mb-10 mb-md-0">
+                        class="product_trust_icon">
                      <span>Backed by Science </span>
                   </div>
                </div>
 
-               <div class="accordion accordion-flush mt-15 tp-product-accordion" id="tp-product-qure">
+               <div class="accordion accordion-flush tp-product-accordion" id="tp-product-qure">
                   <div class="accordion-item qure__accordion-item">
                      <button class="accordion-button collapsed qure__accordion-header" type="button"
                         data-bs-toggle="collapse" data-bs-target="#key-benefits" aria-expanded="false"
@@ -685,8 +682,8 @@
                      </div>
                   </div>
                </div>
-               <div class="product__label mt-40 mb-15"> Jump To </div>
-               <div class="patch-badge-group d-flex flex-wrap gap-3">
+               <div class="product__label jump_to_title"> Jump To </div>
+               <div class="patch-badge-group">
                   <a href="#results" class="patch-badge">The Results<i class="fa-regular fa-arrow-down fs-14"></i></a>
                   <a href="#image_text" class="patch-badge">How It Works <i
                         class="fa-regular fa-arrow-down fs-14"></i></a>
@@ -2732,10 +2729,10 @@
                            src="sections/isolated/treatment/images/afterpay.svg" alt=""></div> 
                   </div>
 
-                  <div class="patch__product-batch mt-30 max-w-ctm" style="--max-w-ctm:500px">
+                  <div class="patch__product-batch">
                      <div class="patch-d-header">
-                        <h4 class="fm-body fs-16 fw-600 mb-0">Next batch ships {date}:</h4>
-                        <p class="fs-14">Due to high demand, our {product name} is sold out. Order now and secure
+                        <h4 class="next_batch_ships">Next batch ships {date}:</h4>
+                        <p class="due_to_demand">Due to high demand, our {product name} is sold out. Order now and secure
                            yours from the next shipment.</p>
                      </div>
                      <div class="progress__bar-container w-100">
