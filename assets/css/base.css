@@ -1791,3 +1791,12 @@ body.page\.hairgrowth-helmet-guide .tab-content a{
 .improve_skin .qure-filter-link:hover{
     --btn-primary-color-hover: #212428 !important;
 }
+.qure_shipping-img.ctm-width{
+    --column-gap:100px; 
+    --column-gap-mobile:30px;
+    --ctm-width:50px; 
+    --ctm-width-mob:30px;
+}
+.bg-light-aqua{
+    background: rgb(199 229 219 / 30%);
+}
