@@ -782,6 +782,9 @@
     --text-color:#212428;
     --progress-width:48%;
 }
+.inner_gap{
+    --column-gap:20px; --column-gap-mobile:18px;
+}
 @media(max-width:767px){
     .product_trust_highlights_cols{
         text-align: center;
