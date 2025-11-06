@@ -35,15 +35,6 @@
   min-width:300px;
   margin-top:5px;
 }
-.across-image-banner__content .btn .fa-plus{
-  width:20px;
-  height:20px;
-  font-size:14px;
-  line-height:16px;
-  text-align:center;
-  border:2px solid;
-  border-radius:20px;
-}
 
 .hemlet-tech-modal{
   background:rgba(0,0,0,.5);

@@ -22,9 +22,16 @@
   color:#8b8c8e;
 }
 .how-compares__select select{
-  padding:12px 16px;
+  padding:10px 42px 10px 16px;
   color:#212428;
   border-radius:40px;
+  background:#fff url(/assets/images/arrow_down.svg) calc(100% - 16px) 50% no-repeat;
+  -webkit-appearance:none;
+     -moz-appearance:none;
+          appearance:none;
+}
+.how-compares__select select:focus{
+  border-color:#dfe0e0;
 }
 .how-compares__data-content{
   display:grid;

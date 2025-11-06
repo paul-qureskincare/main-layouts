@@ -10,6 +10,7 @@
         padding-bottom: 150px;
     }
 
+    // .across-image-banner__image
     &__image {
         position: absolute;
         inset: 0;
@@ -24,6 +25,7 @@
         }
     }
 
+    // .across-image-banner__content
     &__content {
         display: flex;
         flex-direction: column;
@@ -44,16 +46,6 @@
 
             @include sm {
                 width: 100%;
-            }
-
-            .fa-plus {
-                width: 20px;
-                height: 20px;
-                font-size: 14px;
-                line-height: 16px;
-                text-align: center;
-                border: 2px solid;
-                border-radius: 20px;
             }
         }
     }
@@ -103,6 +95,7 @@
         }
     }
 
+    // .hemlet-tech-modal__content
     &__content {
         display: flex;
         flex-grow: 1;
@@ -112,6 +105,7 @@
         background: #fff;
     }
     
+    // .hemlet-tech-modal__text
     &__text {
         overflow: auto;
         padding: 32px 24px;
@@ -142,6 +136,7 @@
         padding-left: 16px;
     }
 
+    // .tech-popup__carousel
     &__carousel {
         margin-bottom: 24px;
 
@@ -170,6 +165,7 @@
         
     }
 
+    // .tech-popup__icons
     &__icons {
         display: flex;
         gap: 12px;
@@ -194,6 +190,7 @@
         }
     }
 
+    // .tech-popup__text
     &__text {
         h6 {
             margin-bottom: 10px;
@@ -209,6 +206,4 @@
             list-style: initial;
         }
     }
-
-
 }

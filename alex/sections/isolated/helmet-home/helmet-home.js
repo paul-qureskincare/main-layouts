@@ -1,5 +1,5 @@
 // Helmet Gallery
-let hemletSwiper = null;
+let helmetSwiper = null;
 const SELECTOR = '#helmet-gallery';
 const THUMB_SELECTOR = '#helmet-gallery-thumbs';
 const BREAKPOINT = 767.9;
@@ -10,7 +10,7 @@ function initSwiper() {
     const el = document.querySelector(SELECTOR);
     const thumbEl = document.querySelector(THUMB_SELECTOR);
     if (!el || !thumbEl) return;
-    if (hemletSwiper) return;
+    if (helmetSwiper) return;
 
     const thumbsSwiper = new Swiper(THUMB_SELECTOR, {
         slidesPerView: 6.05,
@@ -19,7 +19,7 @@ function initSwiper() {
         watchSlidesProgress: true,
     });
 
-    hemletSwiper = new Swiper(SELECTOR, {
+    helmetSwiper = new Swiper(SELECTOR, {
         slidesPerView: 1.01,
         spaceBetween: -15,
         thumbs: {
@@ -37,11 +37,11 @@ function initSwiper() {
 }
 
 function destroySwiper() {
-    if (!hemletSwiper) return;
-    if (typeof hemletSwiper.destroy === 'function') {
-        try { hemletSwiper.destroy(true, true); } catch (e) { hemletSwiper.destroy(); }
+    if (!helmetSwiper) return;
+    if (typeof helmetSwiper.destroy === 'function') {
+        try { helmetSwiper.destroy(true, true); } catch (e) { helmetSwiper.destroy(); }
     }
-    hemletSwiper = null;
+    helmetSwiper = null;
 }
 
 function checkBreakpoint() {
