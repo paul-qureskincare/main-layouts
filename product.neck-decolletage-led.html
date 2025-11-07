@@ -40,9 +40,8 @@
 
     <!-- section-targeted-patches -->
     <link rel="stylesheet" href="sections/isolated/targeted-patches/section-targeted-patches.css" />
-    <div id="buy_box" class="qure__trageted-patches qure__section"
-        style="--section-padding-top: 40px; --section-padding-bottom: 80px;">
-        <div class="container" style="--column-gap:80px; --column-gap-mobile:30px;">
+    <div id="buy_box" class="qure__trageted-patches qure__section">
+        <div class="container custom_gap">
             <div class="row custom__grid">
                 <div class="col-lg-6 custom__block">
                     <div class="qure-product-details">
@@ -145,11 +144,20 @@
                             <img src="sections/isolated/clean-water/images/cyan_blue_rating.svg" alt="">
                             <span><strong>4.8</strong>/5 Rated by Customers</span>
                         </div>
-                        <p class="mb-10 fs-16 fw-400">RED LIGHT NECK & CHEST MASK</p>
-                        <h1 class="qure__product-title mb-10">Combat signs of aging with Neck & Décolletage LED Therapy
+                        <p class="hypo_acid_derm_mist">RED LIGHT NECK & CHEST MASK</p>
+                        <h1 class="qure__product-title purify_skin">Combat signs of aging with Neck & Décolletage LED Therapy
                         </h1>
-                        <h4 class="fw-500 fm-body" style="--font-h4: 22px; --font-h4-mob: 20px;">{$dyn}</h4>
-                        <div class="patch__single-shortdes mt-20">
+                        <div class="bundle_price black_friday_wrapper">
+                           <div class="black_friday_pricing">Black friday:</div>
+                           <div class="dis_red_line">
+                              <div class="bef_price text-decoration-line-through">$238</div>
+                              <div class="aft_price">$149</div>
+                           </div>
+                           <div class="black_friday_price">$133,51</div>
+                           <a href="#" class="save_perc">SAVE 26%</a>
+                        </div>
+                        <h4 class="price_dyn d-none">{$dyn}</h4>
+                        <div class="patch__single-shortdes">
                             <ul>
                                 <li>Clinically-proven results for anti-aging and skin rejuvenation where the first signs
                                     of aging appear.</li>
@@ -159,8 +167,7 @@
                             </ul>
                         </div>
 
-                        <div class="qure__product-action-inner mt-30 mt-md-40 mb-10 max-w-ctm"
-                            style="--max-w-ctm:500px">
+                        <div class="qure__product-action-inner">
                             <button type="submit"
                                 class="add-cart-button product-form__submit btn btn--primary w-100">Buy Now –
                                 {$dyn}</button>

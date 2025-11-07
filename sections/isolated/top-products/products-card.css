@@ -19,6 +19,20 @@
     color: var(--color-ice);
     text-decoration: underline;
 }
+.qure__product-item.silver-badge {
+    position: relative;
+}
+.qure__product-item.silver-badge:after {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    background: url(images/silver-badge.webp) 0 0 no-repeat;
+    background-size: 60px 60px;
+    content: '';
+}
 .qure__product-img {
     max-height: 300px;
 } 
@@ -26,6 +40,10 @@
     display: flex;
     gap: 4px;
     justify-content: center;
+    margin-top: 10px;
+}
+.index .qure__product-price {
+    justify-content: flex-start;
 }
 .qure__product-price .bef_price {
     color: #8b8c8e;
@@ -96,5 +114,10 @@ body.page\.car-giveaway .qure__product-img img {
     }
     .recieve_entries_grid .limited-line {
         height: 43px;
+    }
+}
+@media(max-width:413px){
+    .qure__product-item.silver-badge .badge-bestseller {
+        display: none;
     }
 }

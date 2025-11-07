@@ -1,5 +1,3 @@
-@use "../../../../../mixins/index" as *;
-
 .banner-media video, 
 .video-banner video {
     display: block;
@@ -14,6 +12,12 @@
     &.color-background {
         color: #fff;
         background: #212428;
+        
+        .banner-text--button {
+            color: #212428;
+            border-color: #fff;
+            background: #fff;
+        }
     }
 
     .custom__grid {
@@ -81,11 +85,19 @@
         }
 
         .btn {
-            margin-top: 60px;
+            margin-top: 34px;
 
             @include sm {
                 max-width: 280px;
                 margin-top: 15px;
+            }
+
+            & + span {
+                display: block;
+                margin-top: 8px;
+                color: #707172;
+                font-size: 14px;
+                text-align: center;
             }
         }
 
@@ -113,6 +125,17 @@
 
         img {
             width: 100%;
+            height: auto;
+            border-radius: 0;
+            
+            &[src$=".gif"] {
+                object-fit: cover;
+                aspect-ratio: 6.2 / 5;
+
+                @include md {
+                    aspect-ratio: unset;
+                }
+            }
         }
 
         .bf-discont-badge {
@@ -127,11 +150,12 @@
             justify-content: center;
             width: 140px;
             height: 140px;
-            font-weight: 600;
+            color: #fff;
             font-size: 58px;
+            font-weight: 600;
             line-height: 1;
-            background: #ff5429;
             border-radius: 100px;
+            background: #ff5429;
 
             @include md {
                 top: 25px;
@@ -184,8 +208,8 @@
 
             .swiper-slide {
                 width: auto !important;
-                font-weight: 600;
                 font-size: 20px;
+                font-weight: 600;
                 cursor: pointer;    
                 opacity: 1;
 
@@ -231,8 +255,8 @@
                 }
 
                 img {
-                    min-height: 210px;
                     object-fit: cover;
+                    min-height: 210px;
 
                     @include sm {
                         min-height: 0;
@@ -270,8 +294,8 @@
     position: absolute;
     left: 0;
     color: var(--color-ice);
-    font-weight: 400;
     font-family: Font Awesome\ 6 Pro;
+    font-weight: 400;
     content: "\f058";
 }
 
@@ -288,8 +312,8 @@
 
 .no_hype_evidence .modal .tab-pane p{
     color: var(--Charcoal, #212428);
-    font-weight: 400;
     font-size: 16px;
+    font-weight: 400;
     line-height: 20px; 
 }
 
@@ -298,8 +322,8 @@
     gap: 10px;
     height: max-content !important;
     padding: 16px;
-    background: var(--Mist, #F6F6F7);
     border-radius: 10px;
+    background: var(--Mist, #F6F6F7);
 }
 
 .ingredient_modal .nav-tabs {
@@ -309,15 +333,15 @@
 .ingredient_modal .nav-link {
     padding: 5px 20px;
     color: #212428;
-    border-color: #B5B6B7;
     border-width: 0 0 1px;
+    border-color: #B5B6B7;
 }
 
 .ingredient_modal .nav-link.active {
     color: #212428;
     font-weight: 600;
-    border-color: #212428;
     border-width: 0 0 2px;
+    border-color: #212428;
 }
 
 .banner-text-quotes {
@@ -326,8 +350,8 @@
     margin-bottom: var(--text-quote-mb, 32px);
     padding: 16px;
     font-size: 16px;
-    background: #F6F6F7;
     border-radius: 5px;
+    background: #F6F6F7;
 }
 
 /* Banner steps */
@@ -372,9 +396,9 @@
     width: 36px;
     height: 36px;
     color: #212428;
-    background: #fff;
     border: 1px solid #8B8C8E;
     border-radius: 40px;
+    background: #fff;
     content: counter(step-counter)"";
 }
 
@@ -388,14 +412,14 @@
 
 .prod_wrapper {
     padding: 12px 16px;
-    background: var(--Mist, #F6F6F7);
     border-radius: 10px;
+    background: var(--Mist, #F6F6F7);
 }
 
 @media(max-width:767px){
     .banner-text--heading {
-        font-weight: var(--text-heading-font-weight-mob, 300);
         font-size: var(--text-heading-font-size-mob, 28px);
+        font-weight: var(--text-heading-font-weight-mob, 300);
     }
 
     .banner-text--media.banner-text-mob-full {
