@@ -120,19 +120,31 @@
     display: grid;
     grid-template-columns: 40px 1fr 40px;
     align-items: center;
+    border-bottom: 1px solid #dee2e6;
 }
-
+.ext_cls_list{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding-top: 15px;
+}
 .mi_details {
     display: grid;
     grid-template-columns: 1fr 300px;
 }
-
+.qure__section-heading{
+    font-size: 28px;
+}
 .mi_target-area {
     display: grid;
     grid-template-columns: 1fr 264px;
     column-gap: 50px;
 }
-
+.qure__info-block{
+    padding: 30px;
+    border-radius: 10px;
+}
 .serum_ingredients {
     display: grid;
     grid-template-columns: 72px 1fr;
@@ -217,39 +229,32 @@
     max-width: 100%;
     z-index: 9;
 }
-.modal-dialog{
-    --bs-modal-width:940px;
-}
-.step_card a{
-    color: #91BAEC;    
-}
-.bg-success-subtle{
-    background: #EEF7F4 !important;
-}
-.bg-primary-subtle{
-    background: #F4F8FD !important;
-}
-.mw-500{max-width: 500px;}
-.text-secondary-emphasis{
-    --bs-secondary-text-emphasis:#FF5429;
-}
-.qure__section-heading{font-size: 28px;}
-.filter-card-item.filter-card-video{
-    color: #212428;
-}
-.bg-primary-subtle {
-    background: #FFEEEA!important;
-}
-body.page\.microinfusion-safety-guide .bg-primary-subtle {
-    background: #F4F8FD!important;
-}
-
-
 body.page\.microinfusion-safety-guide-v15 .qure__accordion-content .accordion-body{
     font-size: 16px;
     font-weight: 400;
 }
-
+.qure__faucet-body{
+    padding: 0 6px;
+    padding-bottom: 0;
+} 
+.tip_guide_use{
+    background: #EEF7F4;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 3px;
+}
+.steps_title{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.info_block{
+    background: #cfe2ff;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 25px;
+}
 
 
 @media(max-width:991px) {
@@ -267,6 +272,15 @@ body.page\.microinfusion-safety-guide-v15 .qure__accordion-content .accordion-bo
 }
 
 @media(max-width: 767px) {
+    .ctm_cls_title_wrapper * {
+        color: #fff;
+    }
+    .ctm_cls_title_wrapper p{
+        color: #fff;
+    }
+    .qure__faucet-body{
+        padding-bottom: 30px;
+    } 
     .serum_ingredients {
         padding: 16px;
     }

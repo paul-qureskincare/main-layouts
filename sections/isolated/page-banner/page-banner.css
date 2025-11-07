@@ -170,5 +170,13 @@ body.page\.q-rejuvalight-pro-led-mask-guide .ctm_cls_title_wrapper {
 /* css for guide pages  */
 .imp_notice{font-size:16px;font-weight:600;padding-top:15px;margin-bottom:5px;}
 .read_guidelines{font-size:16px;font-weight:600;}
-@media(max-width:767px){.read_guidelines{font-weight:400;}}
+.ctm_cls_content_wrapper{
+    display: flex;
+    justify-self: end;
+}
+@media(max-width:767px){.read_guidelines{font-weight:400;}
+.ctm_cls_content_wrapper{
+        justify-self: start;
+    }
+}
 /* css for guide pages end */
