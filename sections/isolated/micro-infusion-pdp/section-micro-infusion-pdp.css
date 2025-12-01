@@ -13,13 +13,14 @@
 .e-bundle-tag strong{
   padding:4px 16px;
   color:#fff;
-  background:var(--discount-color);
+}
+.e-bundle-tag strong,.e-bundle-tag:after{
+  background:var(--e-bundle-tag-color, #ff5429);
 }
 .e-bundle-tag:after{
   position:absolute;
   inset:0;
   z-index:-1;
-  background:var(--discount-color);
   opacity:.2;
   content:"";
 }

@@ -15,14 +15,14 @@
     strong {
         padding: 4px 16px;
         color: #fff;
-        background: var(--discount-color);
+        background: var(--e-bundle-tag-color, #ff5429);
     }
 
     &::after {
         position: absolute;
         inset: 0;
         z-index: -1;
-        background: var(--discount-color);
+        background: var(--e-bundle-tag-color, #ff5429);
         opacity: 0.2;
         content: '';
     }
