@@ -17,8 +17,6 @@ document.addEventListener('cart.requestComplete', (event) => {
     }
 });
 
-
-
 /*  render  */
 
 const reloadDrawer = (array) => {
