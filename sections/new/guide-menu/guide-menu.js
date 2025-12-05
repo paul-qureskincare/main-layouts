@@ -19,6 +19,16 @@
             if (btn && btn.getAttribute('aria-expanded') !== 'true') {
                 btn.click();
             }
+
+            const selectedText = select.options[select.selectedIndex]?.textContent || '';
+            const placeholderOption = select.querySelector('option[disabled]');
+            if (placeholderOption && selectedText) {
+                placeholderOption.textContent = selectedText;
+            }
+
+            // Reset select back to placeholder after scroll/action
+            select.selectedIndex = 0;
+            select.value = '';
         }, 200);
     });
 })();

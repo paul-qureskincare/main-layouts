@@ -67,7 +67,7 @@
   font-weight:500;
 }
 .guide-menu__list button.active:after,.guide-menu__list button:hover:after{
-  font-size:20px;
+  -webkit-text-stroke:1px;
 }
 .guide-menu__list button em{
   padding:0 12px;

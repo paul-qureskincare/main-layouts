@@ -65,7 +65,7 @@
         <section class="intro-section">
             <div class="container">
                 <article>
-                    <p><strong>Discover how to make the most of the Qure Neck & Décolletage LED Device with our creative content guide.</strong></p>
+                    <p><strong>Discover how to make the most of the Qure Neck & Décolletage LED System with our creative content guide.</strong></p>
                     <p>This brief will help you craft engaging content that showcases how our device transforms skincare routines for radiant, glowing skin.</p>
                 </article>
             </div>
@@ -78,7 +78,7 @@
             <div class="container">
                 <div class="guide-menu__select">
                     <select name="guide-select" id="guide-select">
-                        <option value="" selected disabled hidden>Product Information</option>
+                        <option value="" selected disabled>Product Information</option>
                         <option value="product-information">Product Information</option>
                         <option value="usage-instructions">Usage Instructions</option>
                         <option value="product-claims">Product Claims</option>
@@ -449,6 +449,7 @@
         </section>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
+                loadScriptOnce('guide-content', 'sections/new/guide-content/guide-content.js');
                 loadScriptOnce('base-slider', 'sections/new/base-slider/base-slider.js');
                 loadScriptOnce('wistia-popup', 'assets/js-new/wistia-popup.js');
                 loadScriptOnce('youtube-popup', 'assets/js-new/yt-popup.js');

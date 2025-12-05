@@ -86,7 +86,7 @@
                 font-weight: 500;
     
                 &::after {
-                    font-size: 20px;
+                    -webkit-text-stroke: 1px;
                 }
             }
     
