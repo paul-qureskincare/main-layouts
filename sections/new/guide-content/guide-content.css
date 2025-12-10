@@ -367,6 +367,15 @@
   padding-left:4px;
   list-style:disc;
 }
+.guide-content article p{
+  margin:0;
+}
+.guide-content article p:not(:last-child){
+  margin-bottom:15px;
+}
+.guide-content article p+ul{
+  margin-top:-10px;
+}
 .guide-content article ol{
   margin-top:15px;
   counter-reset:item;

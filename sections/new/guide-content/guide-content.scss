@@ -146,6 +146,18 @@
             }
         }
 
+        p {
+            margin: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+
+            & + ul {
+                margin-top: -10px;
+            }
+        }
+
         // Numeric list
         ol {
             margin-top: 15px;
