@@ -277,21 +277,6 @@
         .c-note {
             overflow: hidden;
         }
-
-        /* &:has(> picture[data-video-id]) {
-            @include sm {
-                display: flex;
-                flex-direction: column;
-            }
-
-            picture[data-video-id] {
-                @include sm {
-                    order: 10;
-                    margin-top: 15px;
-                    margin-bottom: 0;
-                }
-            }
-        } */
     }
 
     // Details guide link
@@ -381,6 +366,7 @@
 
             button {
                 padding: 0 22px 8px;
+                color: #212428;
                 border: 0;
                 border-bottom: 1px solid #b5b6b7;
                 background: none;
@@ -461,44 +447,6 @@
             border-radius: 10px;
         }
     }
-
-    // Post-Treatment Care & Tips
-
-    /* .external-info {
-        
-
-        p {
-            &:not(:last-child) {
-                margin-bottom: 15px;
-            }
-
-            & + ul {
-                margin-top: -10px;
-            }
-        }
-
-        & > p {
-            strong {
-                font-weight: 500;
-            }
-        }
-
-
-        ul {
-            padding-left: 24px;
-
-            &:not(:last-child) {
-                margin-bottom: 15px;
-            }
-
-            li {
-                padding-left: 4px;
-                list-style: disc;
-            }
-        }
-
-        
-    } */
 
     // Slider
     .c-swiper {

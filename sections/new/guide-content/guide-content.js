@@ -1,24 +1,17 @@
 (function () {
-    var collapses = document.querySelectorAll('.guide-content .accordion-collapse');
+    var collapses    = document.querySelectorAll('.guide-content .accordion-collapse');
     var collapseBtns = document.querySelectorAll('.guide-content .accordion-button');
 
-    // Reset all collapses on small screens (<768px)
-    function resetCollapsesIfSmall() {
-        if (window.innerWidth < 992) {
-            collapses.forEach(function (collapse) {
-                collapse.classList.remove('show');
-            });
-            collapseBtns.forEach(function (btn) {
-                if (btn.getAttribute('aria-expanded') === 'true') {
-                    btn.removeAttribute('aria-expanded');
-                }
-            });
-        }
+    if (window.innerWidth < 991) {
+        collapses.forEach(function (collapse) {
+            collapse.classList.remove('show');
+        });
+        collapseBtns.forEach(function (btn) {
+            if (btn.getAttribute('aria-expanded') === 'true') {
+                btn.setAttribute('aria-expanded', 'false');
+            }
+        });
     }
-
-    // Run on load and on resize
-    resetCollapsesIfSmall();
-    window.addEventListener('resize', resetCollapsesIfSmall);
 
     collapses.forEach(function (collapse) {
         collapse.addEventListener('show.bs.collapse', function (e) {

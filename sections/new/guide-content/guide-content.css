@@ -389,6 +389,7 @@
   width:100%;
   height:63px;
   padding:12px 24px;
+  color:#212428;
   text-align:left;
   border:0;
   background:none;
@@ -746,6 +747,7 @@
 }
 .guide-content .serum-ingredients-details .tabs button{
   padding:0 22px 8px;
+  color:#212428;
   border:0;
   border-bottom:1px solid #b5b6b7;
   background:none;
