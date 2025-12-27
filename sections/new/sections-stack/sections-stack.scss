@@ -59,6 +59,8 @@
 .page\.faucet-creative-brief,
 .page\.dermal-mist-brief,
 .page\.faucet-online-guide {
+.page\.micro-infusion-patches-content-guide,
+.page\.all-in-one-face-serum-creative-content-guide {
     @include sections-stack;
 }
 
@@ -79,6 +81,8 @@
 .page\.faucet-creative-brief,
 .page\.dermal-mist-brief,
 .page\.faucet-online-guide {
+.page\.all-in-one-face-serum-creative-content-guide,
+.page\.micro-infusion-patches-content-guide {
     .sections-stack {
         padding-top: 0;
 
@@ -95,7 +99,8 @@
 .page\.q-rejuvalight-pro-welcome,
 .page\.shower-creative-brief,
 .page\.faucet-creative-brief,
-.page\.dermal-mist-brief {
+.page\.dermal-mist-brief,
+.page\.all-in-one-face-serum-creative-content-guide {
     .sections-stack {
         padding-bottom: 0;
 
