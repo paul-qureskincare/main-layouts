@@ -1171,6 +1171,7 @@ body[class*="page.exclusive-holiday-bundle-deal"] .across-image-banner{
 }
 .page\.all-in-one-serum-customer-reviews .across-image-banner--hero .trustpilot-rating ul li,.page\.micro-infusion-targeted-patches-customer-reviews .across-image-banner--hero .trustpilot-rating ul li,.page\.neck-decolletage-led-customer-reviews .across-image-banner--hero .trustpilot-rating ul li,.page\.q-rejuvalight-pro-customer-reviews .across-image-banner--hero .trustpilot-rating ul li,.page\.reviews .across-image-banner--hero .trustpilot-rating ul li{
   color:#dcdce6;
+  line-height:1;
   background:#fff;
 }
 .page\.all-in-one-serum-customer-reviews .across-image-banner--hero .trustpilot-rating ul li:not(:last-child),.page\.micro-infusion-targeted-patches-customer-reviews .across-image-banner--hero .trustpilot-rating ul li:not(:last-child),.page\.neck-decolletage-led-customer-reviews .across-image-banner--hero .trustpilot-rating ul li:not(:last-child),.page\.q-rejuvalight-pro-customer-reviews .across-image-banner--hero .trustpilot-rating ul li:not(:last-child),.page\.reviews .across-image-banner--hero .trustpilot-rating ul li:not(:last-child){
