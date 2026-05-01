@@ -11,5 +11,22 @@
         "open": "npm run open --name=[branch-name]",
         "push": "npm run push --name=[branch-name] --message=[optional]",
         "close": "npm run close --name=[branch-name]"
+    },
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/paul-qureskincare/main-layouts.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/paul-qureskincare/main-layouts/issues"
+    },
+    "homepage": "https://github.com/paul-qureskincare/main-layouts#readme",
+    "dependencies": {
+        "@vercel/speed-insights": "^2.0.0"
     }
 }
